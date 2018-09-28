@@ -1,0 +1,4 @@
+C:\Users\pmerritt\Documents\SCBA HUD Project\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;arm
+C:\Users\pmerritt\Documents\SCBA HUD Project\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;arm
+C:\Users\pmerritt\Documents\SCBA HUD Project\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj;arm
+C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\SCBA HUD Project.csproj;arm
