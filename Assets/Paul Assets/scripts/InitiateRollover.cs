@@ -1,20 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HoloToolkit.Unity.InputModule;
 
 public class InitiateRollover : MonoBehaviour {
 
-	public GazeManager gazemanager = GameObject.Find("InputManager").GetComponent<GazeManager>();
-	public GameObject target = new GameObject();
+	public GameObject manager;
+	public GameObject target;
 
 	// Use this for initialization
 	void Start () {
-		target = gazemanager.getHitObject();
+		manager = GameObject.Find("InputManager");
+		target = manager.GetComponent<GazeManager>().HitObject;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		target = gazemanager.getHitObject();
+		target = manager.GetComponent<GazeManager>().HitObject;
 		if (target == gameObject){
 			Rollover();
 		}
