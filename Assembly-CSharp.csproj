@@ -51,6 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Holograms\Billboard.cs" />
+     <Compile Include="Assets\Holograms\Interactible.cs" />
+     <Compile Include="Assets\Holograms\InteractibleAction.cs" />
      <Compile Include="Assets\HoloToolkit\Boundary\Scripts\BoundaryManager.cs" />
      <Compile Include="Assets\HoloToolkit\Boundary\Scripts\SceneContentAdjuster.cs" />
      <Compile Include="Assets\HoloToolkit\Input\Scripts\Cursor\AnimatedCursor.cs" />
@@ -341,7 +344,6 @@
      <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Attributes\TutorialAttribute.cs" />
      <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Attributes\UseWithAttribute.cs" />
      <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Attributes\ValidateUnityObjectAttribute.cs" />
-     <Compile Include="Assets\HoloToolkit\Utilities\Scripts\Billboard.cs" />
      <Compile Include="Assets\HoloToolkit\Utilities\Scripts\BitManipulator.cs" />
      <Compile Include="Assets\HoloToolkit\Utilities\Scripts\CameraCache.cs" />
      <Compile Include="Assets\HoloToolkit\Utilities\Scripts\CircularBuffer.cs" />
@@ -536,7 +538,9 @@
      <Compile Include="Assets\Paul Assets\scripts\BreadcrumbTrail.cs" />
      <Compile Include="Assets\Paul Assets\scripts\CircleAirtankBar.cs" />
      <Compile Include="Assets\Paul Assets\scripts\CompassScroll.cs" />
-     <Compile Include="Assets\Paul Assets\scripts\Timer.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\InitiateRollover.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\TemperatureScanner.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\TimerForHUD.cs" />
      <Compile Include="Assets\Paul Assets\scripts\ToggleSpatialMapping.cs" />
      <Compile Include="Assets\Scripts\AnalysisResult.cs" />
      <Compile Include="Assets\Scripts\Hud.cs" />
@@ -547,7 +551,6 @@
      <Compile Include="Assets\SpatialMapping\Scripts\LevelManager.cs" />
      <Compile Include="Assets\SpatialMapping\Scripts\PlaneFindingTest.cs" />
      <Compile Include="Assets\SpatialMapping\Scripts\SpatialProcessingTest.cs" />
-     <Compile Include="Assets\Timer.cs" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\Obsolete\UnlitConfigurable.shader" />
      <None Include="Assets\HoloToolkit\UX\Shaders\HUXButtonShader.shader" />
      <None Include="Assets\HoloToolkit\SpatialUnderstanding\Materials\SpatialUnderstandingSurface.shader" />
