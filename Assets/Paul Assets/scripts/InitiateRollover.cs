@@ -7,25 +7,33 @@ public class InitiateRollover : MonoBehaviour {
 
 	public GameObject manager;
 	public GameObject target;
+	public GameObject evacText;
+	public GameObject evacPath;
+	private bool evac;
 
 	// Use this for initialization
 	void Start () {
 		manager = GameObject.Find("InputManager");
 		target = manager.GetComponent<GazeManager>().HitObject;
+		evacText = GameObject.FindWithTag("EvacText");
+		evacPath = GameObject.FindWithTag("EvacPath");
+		evacText.SetActive(false);
+		evacPath.SetActive(false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		target = manager.GetComponent<GazeManager>().HitObject;
 		if (target == gameObject){
-			Debug.Log("initiated");
 			Rollover();
 		}
 	}
 
 	void Rollover(){
 		Debug.Log("INITIATED");
-		GameObject.Find("MiddleCenterText").SetActive(true);
-		GameObject.Find("EvacuationPath").SetActive(true);
+		evacText.SetActive(true);
+		Debug.Log("one");
+		evacPath.SetActive(true);
+		Debug.Log("done");
 	}
 }

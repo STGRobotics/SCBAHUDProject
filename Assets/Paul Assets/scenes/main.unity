@@ -512,6 +512,7 @@ GameObject:
   - component: {fileID: 50764366}
   - component: {fileID: 50764365}
   - component: {fileID: 50764364}
+  - component: {fileID: 50764367}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -585,6 +586,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 50764362}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &50764367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 50764362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439fa717ea2277449bfdd4c676e508d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 40187834}
+  target: {fileID: 50764362}
+  evacText: {fileID: 1749690806}
+  evacPath: {fileID: 332606136}
 --- !u!1 &71154842
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,11 +2035,11 @@ GameObject:
   - component: {fileID: 332606137}
   m_Layer: 0
   m_Name: Evacuation Path
-  m_TagString: Untagged
+  m_TagString: EvacPath
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!362 &332606137
 WorldAnchor:
   m_ObjectHideFlags: 0
@@ -3451,8 +3467,6 @@ GameObject:
   - component: {fileID: 685153372}
   - component: {fileID: 685153371}
   - component: {fileID: 685153370}
-  - component: {fileID: 685153369}
-  - component: {fileID: 685153374}
   - component: {fileID: 685153376}
   - component: {fileID: 685153375}
   - component: {fileID: 685153378}
@@ -3464,25 +3478,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &685153369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114422077861324704, guid: 7e4dcb5b19bd1e7458a992d4d0959c5b,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 685153368}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42bbdfaa9437c094bad1f3853e7bc068, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InfoPanel: {fileID: 0}
-  AnalysisPanel: {fileID: 0}
-  ThreatAssessmentPanel: {fileID: 0}
-  DiagnosticPanel: {fileID: 0}
-  _loopSeconds: 20
-  _computerVisionKey: -your key goes here-
-  _computerVisionEndpoint: https://westeurope.api.cognitive.microsoft.com/vision/v1.0/
 --- !u!114 &685153370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3573,20 +3568,6 @@ RectTransform:
   m_AnchoredPosition: {x: -750, y: 95}
   m_SizeDelta: {x: 631, y: 351}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &685153374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 685153368}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 907d841297dbb62469f2c79b0fa1d2d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 819791112}
-  offset: {x: -101, y: 88, z: 647}
-  speed: 100
 --- !u!114 &685153375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4218,6 +4199,11 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 790411638}
+--- !u!1 &797381631 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012072213228, guid: a611e772ef8ddf64d8106a9cbb70f31c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1056899107}
 --- !u!1 &811231178
 GameObject:
   m_ObjectHideFlags: 0
@@ -6143,7 +6129,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -592021833
+  randomSeed: 2120538213
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -12816,7 +12802,6 @@ GameObject:
   - component: {fileID: 1671448849}
   - component: {fileID: 1671448850}
   - component: {fileID: 1671448851}
-  - component: {fileID: 1671448852}
   - component: {fileID: 1671448853}
   - component: {fileID: 1671448854}
   m_Layer: 0
@@ -12851,7 +12836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52a72bdb251e5ce488e5c51f0a9c657b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cursor: {fileID: 0}
+  Cursor: {fileID: 797381631}
   DirectionIndicatorObject: {fileID: 0}
   DirectionIndicatorColor: {r: 0, g: 0, b: 1, a: 1}
   VisibilitySafeFactor: 0.1
@@ -12868,19 +12853,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pivotAxis: 0
---- !u!114 &1671448852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1671448848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 439fa717ea2277449bfdd4c676e508d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 40187834}
-  target: {fileID: 50764362}
 --- !u!362 &1671448853
 WorldAnchor:
   m_ObjectHideFlags: 0
@@ -12896,7 +12868,7 @@ BoxCollider:
   m_GameObject: {fileID: 1671448848}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -13218,11 +13190,11 @@ GameObject:
   - component: {fileID: 1749690808}
   m_Layer: 5
   m_Name: MiddleCenterText
-  m_TagString: Untagged
+  m_TagString: EvacText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1749690807
 MonoBehaviour:
   m_ObjectHideFlags: 0

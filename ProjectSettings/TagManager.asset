@@ -6,6 +6,8 @@ TagManager:
   tags:
   - SpatialMapping
   - Fire
+  - EvacText
+  - EvacPath
   layers:
   - Default
   - TransparentFX
