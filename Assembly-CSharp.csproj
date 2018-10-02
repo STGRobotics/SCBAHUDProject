@@ -51,9 +51,37 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Holograms\Billboard.cs" />
-     <Compile Include="Assets\Holograms\Interactible.cs" />
-     <Compile Include="Assets\Holograms\InteractibleAction.cs" />
+     <Compile Include="Assets\FollowCamera.cs" />
+     <Compile Include="Assets\Holograms\good\Billboard.cs" />
+     <Compile Include="Assets\Holograms\good\Interactible.cs" />
+     <Compile Include="Assets\Holograms\good\InteractibleAction.cs" />
+     <Compile Include="Assets\Holograms\MicStream.cs" />
+     <Compile Include="Assets\Holograms\Scripts\ChorusSettings.cs" />
+     <Compile Include="Assets\Holograms\Scripts\EchoSettings.cs" />
+     <Compile Include="Assets\Holograms\Scripts\GestureSoundHandler.cs" />
+     <Compile Include="Assets\Holograms\Scripts\PlaySpaceManager.cs" />
+     <Compile Include="Assets\Holograms\Scripts\PolyActions.cs" />
+     <Compile Include="Assets\Holograms\Scripts\PolyChargerRotation.cs" />
+     <Compile Include="Assets\Holograms\Scripts\PolyStateManager.cs" />
+     <Compile Include="Assets\Holograms\Scripts\TapToPlaceWithSound.cs" />
+     <Compile Include="Assets\Holograms\Scripts\TapToPlaceWithSoundAndAction.cs" />
+     <Compile Include="Assets\Holograms\Scripts\UserVoiceEffect.cs" />
+     <Compile Include="Assets\Holograms\Support\Anchor\Blob.cs" />
+     <Compile Include="Assets\Holograms\Support\Anchor\EnergyHubBase.cs" />
+     <Compile Include="Assets\Holograms\Support\Drone\AutoDestroy.cs" />
+     <Compile Include="Assets\Holograms\Support\Drone\DroneBottom.cs" />
+     <Compile Include="Assets\Holograms\Support\Drone\FriendlyDrone.cs" />
+     <Compile Include="Assets\Holograms\Support\Drone\ShrinkAway.cs" />
+     <Compile Include="Assets\Holograms\Support\Drone\StarArray.cs" />
+     <Compile Include="Assets\Holograms\Support\Orb\GrenadeRotate.cs" />
+     <Compile Include="Assets\Holograms\Support\SpatialMapping\EnergyOrbFinalImpactLifetime.cs" />
+     <Compile Include="Assets\Holograms\Support\SpatialMapping\SpatialMappingDeformation.cs" />
+     <Compile Include="Assets\Holograms\Support\TextPanel\DisplayActiveKeywords.cs" />
+     <Compile Include="Assets\Holograms\Support\Underworld\DroneBehavior.cs" />
+     <Compile Include="Assets\Holograms\Support\Underworld\DroneNavigationPath.cs" />
+     <Compile Include="Assets\Holograms\Support\Underworld\DroneSpawner.cs" />
+     <Compile Include="Assets\Holograms\Support\Underworld\UnderworldBase.cs" />
+     <Compile Include="Assets\Holograms\TagalongAction.cs" />
      <Compile Include="Assets\HoloToolkit\Boundary\Scripts\BoundaryManager.cs" />
      <Compile Include="Assets\HoloToolkit\Boundary\Scripts\SceneContentAdjuster.cs" />
      <Compile Include="Assets\HoloToolkit\Input\Scripts\Cursor\AnimatedCursor.cs" />
@@ -558,7 +586,10 @@
      <None Include="Assets\HoloToolkit\UX\Shaders\unlit_vert_color.shader" />
      <None Include="Assets\mcs 1.rsp" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\Obsolete\VertexLitConfigurable.cginc" />
+     <None Include="Assets\Holograms\Support\Anchor\Shaders\WireHolographic.shader" />
+     <None Include="Assets\Holograms\Support\Anchor\Shaders\BlobWire.shader" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Shaders\FastConfigurable.cginc" />
+     <None Include="Assets\Holograms\Support\Anchor\Shaders\BlobWireInside.shader" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\FastConfigurable\Shaders\FastConfigurable2Sided.shader" />
      <None Include="Assets\csc.rsp" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\Obsolete\UnlitNoDepthTest.shader" />

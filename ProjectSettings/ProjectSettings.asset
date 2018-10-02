@@ -576,7 +576,7 @@ PlayerSettings:
   metroCertificateNotAfter: 001f9c54a0a7d301
   metroApplicationDescription: SCBA HUD Project
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: SCBA HUD Project
   metroCommandLineArgsFile: 
   metroTileShowName: 0
   metroMediumTileShowName: 0
@@ -596,7 +596,7 @@ PlayerSettings:
       Chat: False
       CodeGeneration: False
       EnterpriseAuthentication: False
-      HumanInterfaceDevice: False
+      HumanInterfaceDevice: True
       InputInjectionBrokered: False
       InternetClient: False
       InternetClientServer: False

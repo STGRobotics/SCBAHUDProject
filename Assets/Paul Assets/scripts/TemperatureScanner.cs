@@ -17,7 +17,7 @@ public class TemperatureScanner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		player = GameObject.Find("Main Camera");
+		player = GameObject.Find("MixedRealityCamera");
 		fire = GameObject.Find("Fire");
 		pos1 = player.transform.position;
 		pos2 = fire.transform.position;
@@ -29,7 +29,9 @@ public class TemperatureScanner : MonoBehaviour {
 	void Update () {
 		pos1 = player.transform.position;
 		pos2 = fire.transform.position;
-		dist = DistanceBetweenVector3s(pos1, pos2);
+		dist = Vector3.Distance(pos1, pos2);
+		//Debug.Log(dist + " meters");
+		//Debug.Log(temp + " degrees");
 
 		temp = 300-dist;
 
@@ -37,9 +39,5 @@ public class TemperatureScanner : MonoBehaviour {
 		{
 			fillImg.fillAmount = temp / 300; 
 		}
-	}
-
-	float DistanceBetweenVector3s(Vector3 start, Vector3 end){
-		return start.x-end.x;
 	}
 }

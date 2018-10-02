@@ -18,11 +18,13 @@ public class InitiateRollover : MonoBehaviour {
 	void Update () {
 		target = manager.GetComponent<GazeManager>().HitObject;
 		if (target == gameObject){
+			Debug.Log("initiated");
 			Rollover();
 		}
 	}
 
 	void Rollover(){
+		Debug.Log("INITIATED");
 		GameObject.Find("MiddleCenterText").SetActive(true);
 		GameObject.Find("EvacuationPath").SetActive(true);
 	}
