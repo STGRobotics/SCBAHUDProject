@@ -8,6 +8,8 @@ TagManager:
   - Fire
   - EvacText
   - EvacPath
+  - EvacPoint
+  - FireText
   layers:
   - Default
   - TransparentFX
