@@ -308,3 +308,6 @@ C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\obj\ARM\Releas
 C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\obj\ARM\Release\qualifiers.txt.intermediate
 C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\obj\ARM\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\obj\ARM\Release\ProjectArchitectures.txt
+C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\obj\ARM\Release\SCBA HUD Project.csprojAssemblyReference.cache
+C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\obj\ARM\Release\SCBA HUD Project.exe
+C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\obj\ARM\Release\SCBA HUD Project.pdb

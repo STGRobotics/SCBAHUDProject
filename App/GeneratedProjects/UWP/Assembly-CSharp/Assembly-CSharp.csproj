@@ -5,14 +5,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8408aa21-3442-4d61-82dc-79d332b1a59b}</ProjectGuid>
+    <ProjectGuid>{589b9725-7a5a-4f3d-9395-d7f78322c572}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.17134.0</TargetPlatformVersion>
+    <TargetPlatformVersion>10.0.17763.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -130,8 +130,8 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
-      <Project>{9cf3fe2b-f78a-4abd-ae64-cad39fede8d1}</Project>
+    <ProjectReference Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\GeneratedProjects\UWP\Assembly-CSharp-firstpass\Assembly-CSharp-firstpass.csproj">
+      <Project>{95ecf5a0-ffa2-4434-b494-d0ddadaedaf1}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <Reference Include="UnityEngine.TextRenderingModule">
@@ -354,14 +354,106 @@
       <HintPath>$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <SDKReference Include="WindowsDesktop, Version=10.0.17134.0"/>
-    <SDKReference Include="WindowsIoT, Version=10.0.17134.0"/>
-    <SDKReference Include="WindowsMobile, Version=10.0.17134.0"/>
-    <SDKReference Include="WindowsTeam, Version=10.0.17134.0"/>
+    <SDKReference Include="WindowsDesktop, Version=10.0.17763.0"/>
+    <SDKReference Include="WindowsMobile, Version=10.0.17763.0"/>
+    <SDKReference Include="WindowsTeam, Version=10.0.17763.0"/>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="$(UnityProjectDir)Assets\ArrowAnchor.cs">
-      <Link>ArrowAnchor.cs</Link>
+    <Compile Include="$(UnityProjectDir)Assets\FireHider.cs">
+      <Link>FireHider.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\FollowCamera.cs">
+      <Link>FollowCamera.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\good\Billboard.cs">
+      <Link>Holograms\good\Billboard.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\good\Interactible.cs">
+      <Link>Holograms\good\Interactible.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\good\InteractibleAction.cs">
+      <Link>Holograms\good\InteractibleAction.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\MicStream.cs">
+      <Link>Holograms\MicStream.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Scripts\ChorusSettings.cs">
+      <Link>Holograms\Scripts\ChorusSettings.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Scripts\EchoSettings.cs">
+      <Link>Holograms\Scripts\EchoSettings.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Scripts\GestureSoundHandler.cs">
+      <Link>Holograms\Scripts\GestureSoundHandler.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Scripts\PlaySpaceManager.cs">
+      <Link>Holograms\Scripts\PlaySpaceManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Scripts\PolyActions.cs">
+      <Link>Holograms\Scripts\PolyActions.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Scripts\PolyChargerRotation.cs">
+      <Link>Holograms\Scripts\PolyChargerRotation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Scripts\PolyStateManager.cs">
+      <Link>Holograms\Scripts\PolyStateManager.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Scripts\TapToPlaceWithSound.cs">
+      <Link>Holograms\Scripts\TapToPlaceWithSound.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Scripts\TapToPlaceWithSoundAndAction.cs">
+      <Link>Holograms\Scripts\TapToPlaceWithSoundAndAction.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Scripts\UserVoiceEffect.cs">
+      <Link>Holograms\Scripts\UserVoiceEffect.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Anchor\Blob.cs">
+      <Link>Holograms\Support\Anchor\Blob.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Anchor\EnergyHubBase.cs">
+      <Link>Holograms\Support\Anchor\EnergyHubBase.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Drone\AutoDestroy.cs">
+      <Link>Holograms\Support\Drone\AutoDestroy.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Drone\DroneBottom.cs">
+      <Link>Holograms\Support\Drone\DroneBottom.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Drone\FriendlyDrone.cs">
+      <Link>Holograms\Support\Drone\FriendlyDrone.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Drone\ShrinkAway.cs">
+      <Link>Holograms\Support\Drone\ShrinkAway.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Drone\StarArray.cs">
+      <Link>Holograms\Support\Drone\StarArray.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Orb\GrenadeRotate.cs">
+      <Link>Holograms\Support\Orb\GrenadeRotate.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\SpatialMapping\EnergyOrbFinalImpactLifetime.cs">
+      <Link>Holograms\Support\SpatialMapping\EnergyOrbFinalImpactLifetime.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\SpatialMapping\SpatialMappingDeformation.cs">
+      <Link>Holograms\Support\SpatialMapping\SpatialMappingDeformation.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\TextPanel\DisplayActiveKeywords.cs">
+      <Link>Holograms\Support\TextPanel\DisplayActiveKeywords.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Underworld\DroneBehavior.cs">
+      <Link>Holograms\Support\Underworld\DroneBehavior.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Underworld\DroneNavigationPath.cs">
+      <Link>Holograms\Support\Underworld\DroneNavigationPath.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Underworld\DroneSpawner.cs">
+      <Link>Holograms\Support\Underworld\DroneSpawner.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\Support\Underworld\UnderworldBase.cs">
+      <Link>Holograms\Support\Underworld\UnderworldBase.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Holograms\TagalongAction.cs">
+      <Link>Holograms\TagalongAction.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Boundary\Scripts\BoundaryManager.cs">
       <Link>HoloToolkit\Boundary\Scripts\BoundaryManager.cs</Link>
@@ -1233,9 +1325,6 @@
     <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Attributes\ValidateUnityObjectAttribute.cs">
       <Link>HoloToolkit\Utilities\Scripts\Attributes\ValidateUnityObjectAttribute.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\Billboard.cs">
-      <Link>HoloToolkit\Utilities\Scripts\Billboard.cs</Link>
-    </Compile>
     <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\Utilities\Scripts\BitManipulator.cs">
       <Link>HoloToolkit\Utilities\Scripts\BitManipulator.cs</Link>
     </Compile>
@@ -1806,17 +1895,29 @@
     <Compile Include="$(UnityProjectDir)Assets\HoloToolkit\UX\Scripts\UsabilityUtilities.cs">
       <Link>HoloToolkit\UX\Scripts\UsabilityUtilities.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\BreadcrumbTrail.cs">
-      <Link>Paul Assets\BreadcrumbTrail.cs</Link>
+    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\scripts\ArrowAnchor.cs">
+      <Link>Paul Assets\scripts\ArrowAnchor.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\CircleAirtankBar.cs">
-      <Link>Paul Assets\CircleAirtankBar.cs</Link>
+    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\scripts\BreadcrumbTrail.cs">
+      <Link>Paul Assets\scripts\BreadcrumbTrail.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\CompassScroll.cs">
-      <Link>Paul Assets\CompassScroll.cs</Link>
+    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\scripts\CircleAirtankBar.cs">
+      <Link>Paul Assets\scripts\CircleAirtankBar.cs</Link>
     </Compile>
-    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\ToggleSpatialMapping.cs">
-      <Link>Paul Assets\ToggleSpatialMapping.cs</Link>
+    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\scripts\CompassScroll.cs">
+      <Link>Paul Assets\scripts\CompassScroll.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\scripts\InitiateRollover.cs">
+      <Link>Paul Assets\scripts\InitiateRollover.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\scripts\TemperatureScanner.cs">
+      <Link>Paul Assets\scripts\TemperatureScanner.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\scripts\TimerForHUD.cs">
+      <Link>Paul Assets\scripts\TimerForHUD.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\Paul Assets\scripts\ToggleSpatialMapping.cs">
+      <Link>Paul Assets\scripts\ToggleSpatialMapping.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\Scripts\AnalysisResult.cs">
       <Link>Scripts\AnalysisResult.cs</Link>
@@ -1857,7 +1958,7 @@
     <Message Importance="high" Text="Running SerializationWeaver..." />
     <Move SourceFiles="@(IntermediateAssembly)" DestinationFolder="$(TargetDir)Unprocessed" OverwriteReadOnlyFiles="true" />
     <Move SourceFiles="@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')" DestinationFolder="$(TargetDir)Unprocessed" Condition="Exists('@(IntermediateAssembly-&gt;'%(RelativeDir)%(Filename).pdb')')" OverwriteReadOnlyFiles="true" />
-    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;@C:\Users\pmerritt\Documents\SCBA HUD Project\App\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Assembly-CSharp-firstpass\bin\$(PlatformName)\$(ConfigurationName)&quot;" />
+    <Exec Command="&quot;$(UnityWSAToolsDir)SerializationWeaver\SerializationWeaver.exe&quot; &quot;$(TargetDir)Unprocessed\$(TargetFileName)&quot; &quot;-pdb&quot; &quot;-verbose&quot; &quot;-unity-engine=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.CoreModule.dll&quot; &quot;$([System.IO.Path]::GetFullPath('$(IntermediateOutputPath)').TrimEnd('\'))&quot; &quot;-lock=$([System.IO.Path]::Combine('$(ProjectDir)', 'project.lock.json'))&quot; &quot;@C:\Users\pmerritt\Documents\SCBAHUDProject\App\GeneratedProjects\UWP\Assembly-CSharp\SerializationWeaverArgs.txt&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed&quot; &quot;-unity-networking=$(UnityWSASolutionDir)$(UnityWSASolutionName)\Unprocessed\UnityEngine.Networking.dll&quot; &quot;-additionalAssemblyPath=$(UnityWSASolutionDir)GeneratedProjects\UWP\Assembly-CSharp-firstpass\bin\$(PlatformName)\$(ConfigurationName)&quot;" />
     <Message Importance="high" Text="SerializationWeaver done." />
   </Target>
   <PropertyGroup>

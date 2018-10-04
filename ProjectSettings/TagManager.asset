@@ -10,6 +10,8 @@ TagManager:
   - EvacPath
   - EvacPoint
   - FireText
+  - SuccessText
+  - FailureText
   layers:
   - Default
   - TransparentFX

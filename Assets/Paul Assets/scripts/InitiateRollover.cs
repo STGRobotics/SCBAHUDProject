@@ -14,7 +14,9 @@ public class InitiateRollover : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		manager = GameObject.Find("InputManager");
+		// gaze target starts null
 		target = manager.GetComponent<GazeManager>().HitObject;
+		// assign to variables to deactivate and then reactivate later upon gazing at the fire
 		evacText = GameObject.FindWithTag("EvacText");
 		evacPath = GameObject.FindWithTag("EvacPath");
 		player = GameObject.Find("MixedRealityCamera");
@@ -24,20 +26,22 @@ public class InitiateRollover : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		// update the target of the user's gaze every frame
 		target = manager.GetComponent<GazeManager>().HitObject;
 		if (target != null){
 			//Debug.Log(target);
 		}
-		if (target == GameObject.Find("Cube")){
+		// if the user gazes at the fire and has not failed yet
+		if (target == GameObject.Find("Cube") && GameObject.FindWithTag("FailureText") == null){
+			// fire begins to rollover
 			Rollover();
 		}
 	}
 
 	void Rollover(){
 		Debug.Log("INITIATED ROLLOVER");
+		// evacuation time!
 		evacText.SetActive(true);
-		//Debug.Log("one");
 		evacPath.SetActive(true);
-		//Debug.Log("done");
 	}
 }
