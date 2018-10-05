@@ -39,7 +39,7 @@ public class InitiateRollover : MonoBehaviour {
 	}
 
 	void Rollover(){
-		Debug.Log("INITIATED ROLLOVER");
+		//Debug.Log("INITIATED ROLLOVER");
 		// evacuation time!
 		evacText.SetActive(true);
 		evacPath.SetActive(true);
