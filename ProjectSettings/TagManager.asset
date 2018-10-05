@@ -12,6 +12,7 @@ TagManager:
   - FireText
   - SuccessText
   - FailureText
+  - FailureText2
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - HUD
   - 
   - 
   - 
@@ -46,6 +47,12 @@ TagManager:
   - 
   - Spatial Mapping
   m_SortingLayers:
+  - name: HUD
+    uniqueID: 3787154283
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer
+    uniqueID: 3394124539
     locked: 0

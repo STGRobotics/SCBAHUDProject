@@ -40,14 +40,14 @@ public class TemperatureScanner : MonoBehaviour {
 		pos1 = player.transform.position;
 		// update distance between player/camera and fire every frame
 		dist = Vector3.Distance(pos1, pos2);
-		Debug.Log(dist + " meters");
+		//Debug.Log(dist + " meters");
 		//Debug.Log(temp + " degrees");
 
 		// temperature is some number - distance so that it gets hotter as the user gets closer
 		temp = 300-dist;
 
 		// if the user is close enough to the fire and hasn't failed yet
-		if (dist < 75 && GameObject.FindWithTag("FailureText") == null){
+		if (dist < 75 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
 			// the fire appears!
 			fire.SetActive(true);
 			// if the user has found the fire and gazed at it while close, but hasn't failed yet

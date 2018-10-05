@@ -26,7 +26,7 @@ public class TimerForHUD : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// timer should stop running once user succeeds
-		if (GameObject.FindWithTag("SuccessText") == null){
+		if (GameObject.FindWithTag("SuccessText") == null && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
 			// assuming there's still time, execute
 			if (time > 0)
 			{
