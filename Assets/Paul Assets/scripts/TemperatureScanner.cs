@@ -28,7 +28,7 @@ public class TemperatureScanner : MonoBehaviour {
 		// get camera position (variable)
 		pos1 = player.transform.position;
 		// get fire position (static)
-		pos2 = new Vector3(0.0f, 0.0f, 7.0f);
+		pos2 = new Vector3(4.0f, 0.1f, 12.0f);
 		dist = 1;
 		fillImg = this.GetComponent<Image>();
 	}
@@ -43,7 +43,7 @@ public class TemperatureScanner : MonoBehaviour {
 		//Debug.Log(temp + " degrees");
 
 		// temperature is some number - distance so that it gets hotter as the user gets closer
-		temp = 300-dist;
+		temp = 300-dist*15;
 
 		// if the user is close enough to the fire and hasn't failed yet
 		if (dist < 5 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
@@ -54,7 +54,7 @@ public class TemperatureScanner : MonoBehaviour {
 			}
 			
 			// if the user has found the fire and gazed at it while close, but hasn't failed yet
-			if (GameObject.FindWithTag("EvacText") && GameObject.FindWithTag("FailureText") == null){
+			if (GameObject.FindWithTag("EvacText") && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null && GameObject.FindWithTag("SuccessText") == null){
 				// deactivate the text that tells the user to locate the fire
 				fireText.SetActive(false);
 			}
