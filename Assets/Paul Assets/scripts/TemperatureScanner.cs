@@ -17,21 +17,20 @@ public class TemperatureScanner : MonoBehaviour {
 	private GameObject fireText;
 	// variable for image fill attribute of temperature gauge component
 	Image fillImg;
+	private bool fireInstantiated = false;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find("MixedRealityCamera");
-		fire = GameObject.Find("Fire");
 		// assign to variable to deactivate and activate later upon distance requirements
 		fireText = GameObject.FindWithTag("FireText");
 		fireText.SetActive(false);
 		// get camera position (variable)
 		pos1 = player.transform.position;
 		// get fire position (static)
-		pos2 = fire.transform.position;
+		pos2 = new Vector3(84.4f, 0f, 221.3f);
 		dist = 1;
 		fillImg = this.GetComponent<Image>();
-		fire.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -49,7 +48,11 @@ public class TemperatureScanner : MonoBehaviour {
 		// if the user is close enough to the fire and hasn't failed yet
 		if (dist < 75 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
 			// the fire appears!
-			fire.SetActive(true);
+			if (!fireInstantiated){
+				Instantiate(GameObject.Find("FirePrefab"), pos2, Quaternion.identity);
+				fireInstantiated = true;
+			}
+			
 			// if the user has found the fire and gazed at it while close, but hasn't failed yet
 			if (GameObject.FindWithTag("EvacText") && GameObject.FindWithTag("FailureText") == null){
 				// deactivate the text that tells the user to locate the fire

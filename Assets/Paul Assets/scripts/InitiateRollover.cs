@@ -19,7 +19,7 @@ public class InitiateRollover : MonoBehaviour {
 		// assign to variables to deactivate and then reactivate later upon gazing at the fire
 		evacText = GameObject.FindWithTag("EvacText");
 		evacPath = GameObject.FindWithTag("EvacPath");
-		player = GameObject.Find("MixedRealityCamera");
+		player = gameObject;
 		evacText.SetActive(false);
 		evacPath.SetActive(false);
 	}
@@ -29,13 +29,13 @@ public class InitiateRollover : MonoBehaviour {
 		// update the target of the user's gaze every frame
 		target = manager.GetComponent<GazeManager>().HitObject;
 		if (target != null){
-			//Debug.Log(target);
-		}
-		// if the user gazes at the fire and has not failed yet
-		if (target == GameObject.Find("Cube") && GameObject.FindWithTag("FailureText") == null){
-			// fire begins to rollover
-			Rollover();
-		}
+			Debug.Log(target.name);
+			// if the user gazes at the fire and has not failed yet
+			if (target.name == "Cube" || target.name == "Fire Particle System" && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
+				// fire begins to rollover
+				Rollover();
+			}
+		}	
 	}
 
 	void Rollover(){
