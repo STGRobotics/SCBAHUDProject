@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311938, g: 0.38074005, b: 0.35872707, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -512,7 +512,6 @@ GameObject:
   - component: {fileID: 50764366}
   - component: {fileID: 50764365}
   - component: {fileID: 50764364}
-  - component: {fileID: 50764367}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -578,7 +577,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &50764366
 MeshFilter:
@@ -587,17 +586,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 50764362}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &50764367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 50764362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 439fa717ea2277449bfdd4c676e508d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &71154842
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,6 +1646,28 @@ GameObject:
   m_PrefabParentObject: {fileID: 1372541880982678, guid: d29bc40b7f3df26479d6a0aac211c355,
     type: 2}
   m_PrefabInternal: {fileID: 1575033267}
+--- !u!114 &191311312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 191311311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4f6f0c9f3c3a7448a098514e06cb030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &191311313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 191311311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 439fa717ea2277449bfdd4c676e508d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &191311317
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5902,7 +5912,6 @@ GameObject:
   - component: {fileID: 1059174984}
   - component: {fileID: 1059174983}
   - component: {fileID: 1059174986}
-  - component: {fileID: 1059174985}
   - component: {fileID: 1059174987}
   m_Layer: 0
   m_Name: Fire Particle System
@@ -5919,7 +5928,7 @@ Transform:
   m_GameObject: {fileID: 1059174981}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 50764363}
   m_RootOrder: 0
@@ -6038,7 +6047,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -17778555
+  randomSeed: -241957666
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -9339,17 +9348,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &1059174985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1059174981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f6f0c9f3c3a7448a098514e06cb030, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &1059174986
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13338,7 +13336,7 @@ GameObject:
   - component: {fileID: 1671448853}
   - component: {fileID: 1671448854}
   m_Layer: 0
-  m_Name: Fire
+  m_Name: FirePrefab(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13351,7 +13349,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1671448848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.4, y: 0, z: 221.3}
+  m_LocalPosition: {x: 0, y: 0, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 50764363}

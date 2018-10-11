@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/main.unity
+  - enabled: 0
+    path: Assets/Paul Assets/scenes/main.unity
     guid: 4b66f141b0414c24ea90afa7aee7278e
+  - enabled: 1
+    path: Assets/Paul Assets/scenes/dynamicspawnfire.unity
+    guid: 3c208721349d7674c83bcadcd622613f

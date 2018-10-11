@@ -13,6 +13,8 @@ TagManager:
   - SuccessText
   - FailureText
   - FailureText2
+  - Stars
+  - DebugText
   layers:
   - Default
   - TransparentFX

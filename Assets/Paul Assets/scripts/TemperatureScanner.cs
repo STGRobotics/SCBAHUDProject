@@ -28,7 +28,7 @@ public class TemperatureScanner : MonoBehaviour {
 		// get camera position (variable)
 		pos1 = player.transform.position;
 		// get fire position (static)
-		pos2 = new Vector3(84.4f, 0f, 221.3f);
+		pos2 = new Vector3(0.0f, 0.0f, 7.0f);
 		dist = 1;
 		fillImg = this.GetComponent<Image>();
 	}
@@ -46,7 +46,7 @@ public class TemperatureScanner : MonoBehaviour {
 		temp = 300-dist;
 
 		// if the user is close enough to the fire and hasn't failed yet
-		if (dist < 75 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
+		if (dist < 5 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
 			// the fire appears!
 			if (!fireInstantiated){
 				Instantiate(GameObject.Find("FirePrefab"), pos2, Quaternion.identity);
