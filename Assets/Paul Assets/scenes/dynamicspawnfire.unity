@@ -302,6 +302,8 @@ MonoBehaviour:
   Keywords:
   - Keyword: Map Space
     KeyCode: 32
+  - Keyword: Remove Map
+    KeyCode: 27
   recognitionConfidenceLevel: 1
 --- !u!4 &40187837
 Transform:
@@ -341,12 +343,29 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Remove Map
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1495200593}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  IsGlobalListener: 0
-  PersistentKeywords: 0
+  IsGlobalListener: 1
+  PersistentKeywords: 1
 --- !u!1 &50692213
 GameObject:
   m_ObjectHideFlags: 0
@@ -7817,6 +7836,11 @@ Prefab:
     - target: {fileID: 1000010302963436, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}
       propertyPath: m_TagString
       value: SpatialMapping
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011154029958, guid: 2ed75ffdf9031c94e8bce4b3d17b9928,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000012149591842, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 2}

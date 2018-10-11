@@ -20,6 +20,9 @@ public class PrintToDebugText : MonoBehaviour {
 		}
 		else {
 			debugText.GetComponent<Text>().text = "\n" + gameObject.transform.position;
+			if (GameObject.Find("SpatialMapping") != null){
+				debugText.GetComponent<Text>().text = "mapping on";
+			}
 		}
 	}
 }
