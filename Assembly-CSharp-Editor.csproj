@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{00657FED-A65C-1BB5-00EA-7BA10BF5D502}</ProjectGuid>
+    <ProjectGuid>{65702A16-7EA7-E68B-D349-47D03F478B8C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -109,12 +109,6 @@
      <Compile Include="Assets\HoloToolkit\UX\Scripts\Collections\Editor\CollectionEditor.cs" />
      <Compile Include="Assets\HoloToolkit\UX\Scripts\Editor\CompoundButtonSaveInterceptor.cs" />
      <Compile Include="Assets\HoloToolkit\UX\Scripts\Editor\KeyboardInputFieldEditor.cs" />
- <Reference Include="Vuforia.UnityExtensions.Editor">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Editor/Vuforia.UnityExtensions.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Vuforia.UnityExtensions">
- <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -182,7 +176,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
- <HintPath>C:/Users/pmerritt/Documents/SCBAHUDProject/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
+ <HintPath>C:/Users/pmerritt/Documents/SCBA HUD Project/Assets/HoloToolkit/Utilities/Scripts/GLTF/Plugins/JsonNet/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
@@ -208,11 +202,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{15C38349-ED3B-D71C-CB46-06F5E910D7B4}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{541D0C35-FE3E-B8D3-7962-BFFBFEC8D9F9}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{1CB74410-6C25-DF86-CED1-6FBB89D6991D}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{26B2865D-EBA8-5172-EBDA-3C2F15266E20}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{9BB11D0D-25A7-C3AE-8DEC-D45FA968F875}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
+      <Project>{4BFE2638-BC0F-5907-113B-7C8D75352A5E}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

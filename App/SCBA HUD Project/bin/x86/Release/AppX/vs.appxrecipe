@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-11T23:42:57.289</Modified>
+      <Modified>2018-10-15T21:48:16.090</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\bin\x86\Release\SCBA HUD Project.exe">
       <PackagePath>entrypoint\SCBA HUD Project.exe</PackagePath>
-      <Modified>2018-10-11T23:42:28.720</Modified>
+      <Modified>2018-10-15T21:47:55.621</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2018-10-11T23:40:49.738</Modified>
+      <Modified>2018-10-15T21:33:56.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -559,15 +559,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2018-10-11T23:39:38.129</Modified>
+      <Modified>2018-10-15T21:32:42.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2018-10-11T23:39:32.133</Modified>
+      <Modified>2018-10-15T21:32:36.524</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2018-10-11T23:39:29.702</Modified>
+      <Modified>2018-10-15T21:32:34.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -575,31 +575,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2018-10-11T23:39:38.123</Modified>
+      <Modified>2018-10-15T21:32:42.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2018-10-11T23:39:32.425</Modified>
+      <Modified>2018-10-15T21:32:36.836</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2018-10-11T23:39:35.858</Modified>
+      <Modified>2018-10-15T21:32:40.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2018-10-11T23:39:29.691</Modified>
+      <Modified>2018-10-15T21:32:33.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2018-10-11T23:39:35.846</Modified>
+      <Modified>2018-10-15T21:32:40.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2018-10-11T23:40:49.645</Modified>
+      <Modified>2018-10-15T21:33:56.829</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2018-10-11T23:40:49.651</Modified>
+      <Modified>2018-10-15T21:33:56.834</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -608,235 +608,235 @@
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-11T23:42:31.128</Modified>
+      <Modified>2018-10-15T21:47:57.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.292</Modified>
+      <Modified>2018-10-15T21:48:13.134</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.321</Modified>
+      <Modified>2018-10-15T21:48:13.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.340</Modified>
+      <Modified>2018-10-15T21:48:13.175</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.367</Modified>
+      <Modified>2018-10-15T21:48:13.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.395</Modified>
+      <Modified>2018-10-15T21:48:13.224</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.416</Modified>
+      <Modified>2018-10-15T21:48:13.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.SharedInternalsModule.dll">
       <PackagePath>UnityEngine.SharedInternalsModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.440</Modified>
+      <Modified>2018-10-15T21:48:13.261</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.466</Modified>
+      <Modified>2018-10-15T21:48:13.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.SpriteShapeModule.dll">
       <PackagePath>UnityEngine.SpriteShapeModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.484</Modified>
+      <Modified>2018-10-15T21:48:13.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.537</Modified>
+      <Modified>2018-10-15T21:48:13.348</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.588</Modified>
+      <Modified>2018-10-15T21:48:13.401</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.614</Modified>
+      <Modified>2018-10-15T21:48:13.421</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.634</Modified>
+      <Modified>2018-10-15T21:48:13.440</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.670</Modified>
+      <Modified>2018-10-15T21:48:13.469</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.718</Modified>
+      <Modified>2018-10-15T21:48:13.511</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.739</Modified>
+      <Modified>2018-10-15T21:48:13.532</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.761</Modified>
+      <Modified>2018-10-15T21:48:13.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.787</Modified>
+      <Modified>2018-10-15T21:48:13.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.821</Modified>
+      <Modified>2018-10-15T21:48:13.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.858</Modified>
+      <Modified>2018-10-15T21:48:13.630</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.878</Modified>
+      <Modified>2018-10-15T21:48:13.649</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.901</Modified>
+      <Modified>2018-10-15T21:48:13.672</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.928</Modified>
+      <Modified>2018-10-15T21:48:13.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.968</Modified>
+      <Modified>2018-10-15T21:48:13.730</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.006</Modified>
+      <Modified>2018-10-15T21:48:13.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.AssetBundleModule.dll">
       <PackagePath>UnityEngine.AssetBundleModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.029</Modified>
+      <Modified>2018-10-15T21:48:13.781</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.056</Modified>
+      <Modified>2018-10-15T21:48:13.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.089</Modified>
+      <Modified>2018-10-15T21:48:13.838</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.463</Modified>
+      <Modified>2018-10-15T21:48:14.138</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.584</Modified>
+      <Modified>2018-10-15T21:48:14.250</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.632</Modified>
+      <Modified>2018-10-15T21:48:14.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.677</Modified>
+      <Modified>2018-10-15T21:48:14.322</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.704</Modified>
+      <Modified>2018-10-15T21:48:14.352</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.727</Modified>
+      <Modified>2018-10-15T21:48:14.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.750</Modified>
+      <Modified>2018-10-15T21:48:14.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.774</Modified>
+      <Modified>2018-10-15T21:48:14.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.811</Modified>
+      <Modified>2018-10-15T21:48:14.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.858</Modified>
+      <Modified>2018-10-15T21:48:14.486</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.894</Modified>
+      <Modified>2018-10-15T21:48:14.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.941</Modified>
+      <Modified>2018-10-15T21:48:14.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2018-10-11T23:40:14.942</Modified>
+      <Modified>2018-10-15T21:33:20.568</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.969</Modified>
+      <Modified>2018-10-15T21:48:14.580</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:50.996</Modified>
+      <Modified>2018-10-15T21:48:14.601</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.015</Modified>
+      <Modified>2018-10-15T21:48:14.618</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.054</Modified>
+      <Modified>2018-10-15T21:48:14.657</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.162</Modified>
+      <Modified>2018-10-15T21:48:14.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.289</Modified>
+      <Modified>2018-10-15T21:48:14.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.431</Modified>
+      <Modified>2018-10-15T21:48:14.924</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.624</Modified>
+      <Modified>2018-10-15T21:48:15.068</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.693</Modified>
+      <Modified>2018-10-15T21:48:15.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.726</Modified>
+      <Modified>2018-10-15T21:48:15.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.772</Modified>
+      <Modified>2018-10-15T21:48:15.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.StandardEvents.dll">
       <PackagePath>UnityEngine.StandardEvents.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.818</Modified>
+      <Modified>2018-10-15T21:48:15.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2018-10-11T23:42:51.968</Modified>
+      <Modified>2018-10-15T21:48:15.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.116</Modified>
+      <Modified>2018-10-15T21:48:12.971</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Assembly-CSharp-firstpass.dll">
       <PackagePath>Assembly-CSharp-firstpass.dll</PackagePath>
-      <Modified>2018-10-11T23:42:49.244</Modified>
+      <Modified>2018-10-15T21:48:13.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\bin\x86\Release\Core\SCBA HUD Project.exe">
       <PackagePath>SCBA HUD Project.exe</PackagePath>
-      <Modified>2018-10-11T23:42:57.263</Modified>
+      <Modified>2018-10-15T21:48:16.066</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
