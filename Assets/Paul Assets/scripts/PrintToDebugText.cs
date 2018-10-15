@@ -16,13 +16,10 @@ public class PrintToDebugText : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (GameObject.Find("FirePrefab(Clone)") != null){
-			debugText.GetComponent<Text>().text = GameObject.Find("FirePrefab(Clone)").transform.position + "\n" + gameObject.transform.position;
+			//debugText.GetComponent<Text>().text = GameObject.Find("FirePrefab(Clone)").transform.position + "\n" + gameObject.transform.position;
 		}
 		else {
-			debugText.GetComponent<Text>().text = "\n" + gameObject.transform.position;
-			if (GameObject.Find("SpatialMapping") != null){
-				debugText.GetComponent<Text>().text = "mapping on";
-			}
+			//debugText.GetComponent<Text>().text = "\n" + gameObject.transform.position;
 		}
 	}
 }
