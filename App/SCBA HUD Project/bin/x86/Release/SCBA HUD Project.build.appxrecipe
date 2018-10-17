@@ -451,6 +451,9 @@
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBA HUD Project\App\SCBA HUD Project\Data\sharedassets0.resource">
+      <PackagePath>Data\sharedassets0.resource</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
