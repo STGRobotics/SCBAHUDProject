@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Used, attached to SpatialMapping to print status of activation
+
 public class PrintStatusOfMapping : MonoBehaviour {
 
 	GameObject debugText;

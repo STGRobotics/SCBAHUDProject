@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+//Unused, copied from MRT exercise
+
 public class TapToPlaceParent : MonoBehaviour
 {
     bool placing = false;

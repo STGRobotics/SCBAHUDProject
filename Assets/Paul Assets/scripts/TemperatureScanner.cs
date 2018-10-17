@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Used, attached to Temperature to increment fill amount of child image based on distance
+
 public class TemperatureScanner : MonoBehaviour {
 
 	private GameObject player;

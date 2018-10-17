@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//Unused, attempted and failed to understand anchor management
 
 public class ArrowAnchor : MonoBehaviour {
 

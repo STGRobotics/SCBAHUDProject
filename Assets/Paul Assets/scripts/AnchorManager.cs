@@ -7,7 +7,7 @@ using UnityEngine.XR.WSA.Persistence;
 
 public class AnchorManager : MonoBehaviour {
 
-
+	//Unused, doesn't do anything anyway
 
 	private void StoreLoaded(WorldAnchorStore store){
 		//this.store = store;
@@ -24,8 +24,6 @@ public class AnchorManager : MonoBehaviour {
 
 		WorldAnchor anchor = GameObject.Find("WorldSpaceObjects").AddComponent<WorldAnchor>();
 		//WorldAnchorManager.Instance.AttachAnchor(GameObject.Find("WorldSpaceObjects"), "objs");
-
-
 
 	}
 	

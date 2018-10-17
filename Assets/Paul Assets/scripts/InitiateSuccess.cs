@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule;
 
+//Used, attached to EvacPoint to initiate success
+
 public class InitiateSuccess : MonoBehaviour {
 
 	// input manager to get gazemanager component

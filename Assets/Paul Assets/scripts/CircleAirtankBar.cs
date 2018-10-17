@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Unused, attempted to make my own UI for airtank
+
 public class CircleAirtankBar : MonoBehaviour {
 	public Image bar;
 	public RectTransform button;

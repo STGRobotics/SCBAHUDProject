@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Unused, attempted to turn off/on SpatialMapping with keycode attached to voice command
+
 public class ToggleSpatialMapping : MonoBehaviour {
 
 	public GameObject SpatialMapping;

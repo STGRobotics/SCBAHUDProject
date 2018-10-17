@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
  
 using System.Collections;
+
+//Unused, attempted to create horizontally scrolling compass similar to some video games, could be implemented probably?
  
 public class CompassScroll : MonoBehaviour
 {

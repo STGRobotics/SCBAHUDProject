@@ -11,6 +11,8 @@ public class InitiateRollover : MonoBehaviour {
 	private GameObject evacPath;
 	private GameObject player;
 
+	//Used, attached to camera to initiate rollover/evacuation sequence
+
 	// Use this for initialization
 	void Start () {
 		manager = GameObject.Find("InputManager");

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class PrintToDebugText : MonoBehaviour {
 
+	//Used for debugging purposes, attached to camera
+
 	GameObject debugText;
 
 

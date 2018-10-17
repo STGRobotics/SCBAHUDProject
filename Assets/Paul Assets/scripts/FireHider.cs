@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FireHider : MonoBehaviour {
 
+	//Unused, sets fire to inactive (place script on fire) and activates upon distance being less than 25
+
 	private GameObject player;
 
 	// Use this for initialization

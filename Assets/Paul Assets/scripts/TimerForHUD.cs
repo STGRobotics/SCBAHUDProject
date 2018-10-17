@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Used, attached to AirTank to manage fill amount of child image based on timer
+
 public class TimerForHUD : MonoBehaviour {
 
 	//component attribute for how filled the radial image of the gauge is

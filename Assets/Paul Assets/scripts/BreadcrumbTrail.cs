@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Unused, attempted and failed to manually place positions for vertices on a TrailRenderer
+
 public class BreadcrumbTrail : MonoBehaviour {
 
 	List<Vector3> positions = new List<Vector3>();

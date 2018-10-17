@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Used, attached to camera to kill the player upon contact with Fire
+
 public class KillPlayer : MonoBehaviour {
 
 	private GameObject target;

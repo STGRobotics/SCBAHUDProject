@@ -6,8 +6,9 @@ public class FollowCamera : MonoBehaviour {
 
 	public GameObject camera;
 	public Vector3 offset;
-
 	public float speed;
+
+	//Unused, attempted to force an object to follow the camera as a tagalong
 
 	// Use this for initialization
 	void Start () {

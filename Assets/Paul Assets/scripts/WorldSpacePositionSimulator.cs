@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Unused, attempted and failed to force some WorldSpacePosition? for anchor management
+
 public class WorldSpacePositionSimulator : MonoBehaviour {
 
 	private GameObject player;
