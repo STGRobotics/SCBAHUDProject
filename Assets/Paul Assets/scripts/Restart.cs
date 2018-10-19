@@ -5,7 +5,9 @@
  public class Restart : MonoBehaviour {
  
      public void RestartGame() {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
+     	Destroy(GameObject.Find("MixedRealityCameraParent"));
+     	Destroy(GameObject.Find("Manager"));
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // loads current scene
      }
  
  }
