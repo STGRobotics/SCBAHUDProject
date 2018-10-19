@@ -23,6 +23,9 @@ public class TemperatureScanner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//remove floor quad
+		Destroy(GameObject.Find("FloorQuad(Clone)"));
+
 		player = GameObject.Find("MixedRealityCamera");
 		// assign to variable to deactivate and activate later upon distance requirements
 		fireText = GameObject.FindWithTag("FireText");
