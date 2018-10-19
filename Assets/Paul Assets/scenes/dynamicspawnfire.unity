@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311938, g: 0.38074005, b: 0.35872707, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 40187836}
   - component: {fileID: 40187835}
   - component: {fileID: 40187838}
+  - component: {fileID: 40187839}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -306,6 +307,8 @@ MonoBehaviour:
     KeyCode: 27
   - Keyword: Pass Alarm
     KeyCode: 42
+  - Keyword: Reset Scene
+    KeyCode: 43
   recognitionConfidenceLevel: 1
 --- !u!4 &40187837
 Transform:
@@ -384,8 +387,36 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
+  - Keyword: Reset Scene
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 40187839}
+          m_MethodName: RestartGame
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
   IsGlobalListener: 1
   PersistentKeywords: 1
+--- !u!114 &40187839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 40187834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896ea37caf97d734c816a5cb2d5d4533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &50692213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1800,6 +1831,11 @@ Prefab:
         type: 2}
       propertyPath: prewarm
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 135138488135432002, guid: 58db606a56527334cb1d841c149064d4,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.075
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114224089394221644, guid: 58db606a56527334cb1d841c149064d4, type: 2}
@@ -3434,7 +3470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e06b530b0dba40428d7eca3173ba3f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAmt: 180
+  timeAmt: 120
 --- !u!114 &790411641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5207,6 +5243,7 @@ RectTransform:
   - {fileID: 1469964814}
   - {fileID: 916193964}
   - {fileID: 1485561992}
+  - {fileID: 1998262570}
   m_Father: {fileID: 1729384830}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8480,6 +8517,101 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1923796329}
   m_Mesh: {fileID: 4300018, guid: 17244dcb4bba8bb4eaeb87abd0ad4a93, type: 3}
+--- !u!1 &1998262569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1970288203568446, guid: 7e4dcb5b19bd1e7458a992d4d0959c5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1998262570}
+  - component: {fileID: 1998262573}
+  - component: {fileID: 1998262572}
+  - component: {fileID: 1998262571}
+  m_Layer: 5
+  m_Name: InstructionsText
+  m_TagString: InstructionsText
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1998262570
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224628730129850628, guid: 7e4dcb5b19bd1e7458a992d4d0959c5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998262569}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1135682566}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 59.5, y: -146.5}
+  m_SizeDelta: {x: 300, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1998262571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114737859905489898, guid: 7e4dcb5b19bd1e7458a992d4d0959c5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998262569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa195995dc98864f91334b0572ff4d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LetterDelay: 0.01
+  Message: 
+--- !u!114 &1998262572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114295227746656990, guid: 7e4dcb5b19bd1e7458a992d4d0959c5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998262569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9264706, g: 0.9264706, b: 0.9264706, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 254
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'LOCATE THE FIRE
+
+    WALK AND FOLLOW YOUR TEMP GAUGE'
+--- !u!222 &1998262573
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 222042606144957158, guid: 7e4dcb5b19bd1e7458a992d4d0959c5b,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1998262569}
 --- !u!1 &2000394809
 GameObject:
   m_ObjectHideFlags: 0
@@ -8833,7 +8965,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'HIGH TEMPERATURES
 
-    LOCATE THE FIRE'
+    IDENTIFY THE FIRE'
 --- !u!222 &2063871206
 CanvasRenderer:
   m_ObjectHideFlags: 0

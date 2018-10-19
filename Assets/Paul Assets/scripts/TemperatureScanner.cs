@@ -65,7 +65,8 @@ public class TemperatureScanner : MonoBehaviour {
 			}
 			// otherwise...
 			else {
-				// activate the text that tells the user to locate the fire
+				// activate the text that tells the user to identify the fire
+				GameObject.FindWithTag("InstructionsText").SetActive(false);
 				fireText.SetActive(true);
 			}
 			

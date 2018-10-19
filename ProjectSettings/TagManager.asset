@@ -15,6 +15,7 @@ TagManager:
   - FailureText2
   - Stars
   - DebugText
+  - InstructionsText
   layers:
   - Default
   - TransparentFX
