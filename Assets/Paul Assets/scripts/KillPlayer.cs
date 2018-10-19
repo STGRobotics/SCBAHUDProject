@@ -27,7 +27,7 @@ public class KillPlayer : MonoBehaviour {
     {
     	//Debug.Log(col.gameObject.name);
     	// if fire collides with camera/player, failure sequence
-        if(col.gameObject.name == "Fire Particle System")
+        if(col.gameObject.name == "Fire Particle System" && GameObject.FindWithTag("SuccessText") == null && GameObject.FindWithTag("FailureText") == null)
         {
             failureText2.SetActive(true);
             if (GameObject.FindWithTag("EvacText")){

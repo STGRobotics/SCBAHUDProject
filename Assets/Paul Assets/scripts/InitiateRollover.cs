@@ -33,9 +33,12 @@ public class InitiateRollover : MonoBehaviour {
 		if (target != null){
 			Debug.Log(target.name);
 			// if the user gazes at the fire and has not failed yet
-			if (target.name == "Cube" || target.name == "Fire Particle System" && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
-				// fire begins to rollover
-				Rollover();
+			if (target.name == "Cube" || target.name == "Fire Particle System"){
+				if (GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null && GameObject.FindWithTag("SuccessText") == null){
+					// fire begins to rollover
+					Rollover();
+				}
+				
 			}
 		}	
 	}
