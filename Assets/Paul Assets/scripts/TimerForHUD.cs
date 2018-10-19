@@ -47,6 +47,10 @@ public class TimerForHUD : MonoBehaviour {
 				if (GameObject.FindWithTag("FireText")){
 					GameObject.FindWithTag("FireText").SetActive(false);
 				}
+				if (GameObject.FindWithTag("InstructionsText")){
+					GameObject.FindWithTag("InstructionsText").SetActive(false);
+				}
+				
 			}
 		}
 	}

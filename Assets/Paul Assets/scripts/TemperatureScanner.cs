@@ -56,20 +56,9 @@ public class TemperatureScanner : MonoBehaviour {
 			if (!fireInstantiated){
 				Instantiate(GameObject.Find("FirePrefab"), pos2, Quaternion.identity);
 				fireInstantiated = true;
-			}
-			
-			// if the user has found the fire and gazed at it while close, but hasn't failed yet
-			if (GameObject.FindWithTag("EvacText") && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null && GameObject.FindWithTag("SuccessText") == null){
-				// deactivate the text that tells the user to locate the fire
-				fireText.SetActive(false);
-			}
-			// otherwise...
-			else {
-				// activate the text that tells the user to identify the fire
-				GameObject.FindWithTag("InstructionsText").SetActive(false);
 				fireText.SetActive(true);
+				GameObject.FindWithTag("InstructionsText").SetActive(false);
 			}
-			
 		}
 		// as long as the temperature does not reach 300 (distance is 0, or you're in the fire)
 		if (temp < 300)

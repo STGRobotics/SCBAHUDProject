@@ -46,6 +46,7 @@ public class InitiateRollover : MonoBehaviour {
 	void Rollover(){
 		//Debug.Log("INITIATED ROLLOVER");
 		// evacuation time!
+		GameObject.FindWithTag("FireText").SetActive(false);
 		evacText.SetActive(true);
 		evacPath.SetActive(true);
 	}
