@@ -14,6 +14,7 @@ public class TemperatureScanner : MonoBehaviour {
 	private Vector3 pos1;
 	// position of the fire
 	private Vector3 pos2;
+	private Vector3 pos3;
 	// distance between positions
 	private float dist;
 	private GameObject fireText;
@@ -34,6 +35,7 @@ public class TemperatureScanner : MonoBehaviour {
 		pos1 = player.transform.position;
 		// get fire position (static)
 		pos2 = new Vector3(4.0f, 0.1f, 12.0f);
+		pos3 = new Vector3(0.81f, -3.05f, 21.25f);
 		dist = 1;
 		fillImg = this.GetComponent<Image>();
 	}
@@ -54,10 +56,11 @@ public class TemperatureScanner : MonoBehaviour {
 		if (dist < 5 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
 			// the fire appears!
 			if (!fireInstantiated){
-				Instantiate(GameObject.Find("FirePrefab"), pos2, Quaternion.identity);
+				Instantiate(GameObject.Find("FirePrefab"), pos3, Quaternion.identity);
 				fireInstantiated = true;
 				fireText.SetActive(true);
 				GameObject.FindWithTag("InstructionsText").SetActive(false);
+				GameObject.Find("FirePrefab(Clone)").transform.Rotate(0,0,90f);
 			}
 		}
 		// as long as the temperature does not reach 300 (distance is 0, or you're in the fire)

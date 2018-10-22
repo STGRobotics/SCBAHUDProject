@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311938, g: 0.38074005, b: 0.35872707, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -884,7 +884,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 125125902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1241615717}
@@ -1748,19 +1748,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4033846195146824, guid: 58db606a56527334cb1d841c149064d4, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.23651162
       objectReference: {fileID: 0}
     - target: {fileID: 4033846195146824, guid: 58db606a56527334cb1d841c149064d4, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.42048866
       objectReference: {fileID: 0}
     - target: {fileID: 4033846195146824, guid: 58db606a56527334cb1d841c149064d4, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.114520095
       objectReference: {fileID: 0}
     - target: {fileID: 4033846195146824, guid: 58db606a56527334cb1d841c149064d4, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.86841047
       objectReference: {fileID: 0}
     - target: {fileID: 4033846195146824, guid: 58db606a56527334cb1d841c149064d4, type: 2}
       propertyPath: m_RootOrder
@@ -1773,17 +1773,17 @@ Prefab:
     - target: {fileID: 65034402551393674, guid: 58db606a56527334cb1d841c149064d4,
         type: 2}
       propertyPath: m_Size.x
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 65034402551393674, guid: 58db606a56527334cb1d841c149064d4,
         type: 2}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 65034402551393674, guid: 58db606a56527334cb1d841c149064d4,
         type: 2}
       propertyPath: m_Size.z
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4602637435405454, guid: 58db606a56527334cb1d841c149064d4, type: 2}
       propertyPath: m_LocalScale.x
@@ -1810,7 +1810,7 @@ Prefab:
     - target: {fileID: 198204024848404404, guid: 58db606a56527334cb1d841c149064d4,
         type: 2}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 15
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 198204024848404404, guid: 58db606a56527334cb1d841c149064d4,
         type: 2}
@@ -1835,7 +1835,7 @@ Prefab:
     - target: {fileID: 198204024848404404, guid: 58db606a56527334cb1d841c149064d4,
         type: 2}
       propertyPath: ShapeModule.m_Scale.x
-      value: 15
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198204024848404404, guid: 58db606a56527334cb1d841c149064d4,
         type: 2}
@@ -1845,7 +1845,7 @@ Prefab:
     - target: {fileID: 198204024848404404, guid: 58db606a56527334cb1d841c149064d4,
         type: 2}
       propertyPath: ShapeModule.m_Scale.y
-      value: 15
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198204024848404404, guid: 58db606a56527334cb1d841c149064d4,
         type: 2}
@@ -1865,7 +1865,46 @@ Prefab:
     - target: {fileID: 135138488135432002, guid: 58db606a56527334cb1d841c149064d4,
         type: 2}
       propertyPath: m_Radius
-      value: 0.075
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033846195146824, guid: 58db606a56527334cb1d841c149064d4, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -30.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4033846195146824, guid: 58db606a56527334cb1d841c149064d4, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 51.673
+      objectReference: {fileID: 0}
+    - target: {fileID: 114306432019149938, guid: 58db606a56527334cb1d841c149064d4,
+        type: 2}
+      propertyPath: pivotAxis
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221460017327082, guid: 58db606a56527334cb1d841c149064d4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221460017327082, guid: 58db606a56527334cb1d841c149064d4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221460017327082, guid: 58db606a56527334cb1d841c149064d4, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 65034402551393674, guid: 58db606a56527334cb1d841c149064d4,
+        type: 2}
+      propertyPath: m_Center.y
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4602637435405454, guid: 58db606a56527334cb1d841c149064d4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 135138488135432002, guid: 58db606a56527334cb1d841c149064d4,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114224089394221644, guid: 58db606a56527334cb1d841c149064d4, type: 2}
@@ -3325,7 +3364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3368,7 +3407,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
 --- !u!1 &780859599
@@ -4140,7 +4179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4181,7 +4220,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
 --- !u!1 &922371331
@@ -4384,6 +4423,11 @@ Prefab:
       propertyPath: Cursor
       value: 
       objectReference: {fileID: 491175077}
+    - target: {fileID: 114000012009196210, guid: 3eddd1c29199313478dd3f912bfab2ab,
+        type: 2}
+      propertyPath: RaycastLayerMasks.Array.data[0].m_Bits
+      value: 4294967263
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
   m_IsPrefabParent: 0
@@ -6508,7 +6552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6549,7 +6593,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
 --- !u!1 &1472158890
@@ -6793,7 +6837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6832,7 +6876,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
 --- !u!1 &1490410582
@@ -7732,7 +7776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SphereRadius: 0
-  MoveSpeed: 3
+  MoveSpeed: 5
   useUnscaledTime: 1
   hideOnStart: 0
   debugDisplaySphere: 0
@@ -8005,7 +8049,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8046,7 +8090,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
 --- !u!1 &1789498316
@@ -8688,7 +8732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8729,7 +8773,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
 --- !u!1 &2000394809
@@ -9064,7 +9108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9105,7 +9149,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
 --- !u!1 &2094371633
