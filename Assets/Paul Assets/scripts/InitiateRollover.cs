@@ -10,6 +10,7 @@ public class InitiateRollover : MonoBehaviour {
 	private GameObject evacText;
 	private GameObject evacPath;
 	private GameObject player;
+	private bool growFire = false;
 
 	//Used, attached to camera to initiate rollover/evacuation sequence
 
@@ -40,6 +41,9 @@ public class InitiateRollover : MonoBehaviour {
 				}
 				
 			}
+		}
+		if (growFire){
+			GameObject.Find("FirePrefab(Clone)").transform.GetChild(0).transform.GetChild(0).transform.localScale += new Vector3(0,.01f,.01f);
 		}	
 	}
 
@@ -49,5 +53,6 @@ public class InitiateRollover : MonoBehaviour {
 		GameObject.FindWithTag("FireText").SetActive(false);
 		evacText.SetActive(true);
 		evacPath.SetActive(true);
+		growFire = true;
 	}
 }

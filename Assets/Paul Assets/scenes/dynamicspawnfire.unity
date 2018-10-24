@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
 --- !u!114 &174536145
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1388,7 +1388,7 @@ MonoBehaviour:
   m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
 --- !u!1 &197510456
@@ -3384,11 +3384,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ALERT
+  m_Text: 'ALERT!!
 
-    FIRE INITIATED ROLLOVER
+    FIRE INITIATED ROLLOVER!
 
-    EVACUATE'
+    EVACUATE!'
 --- !u!222 &769391276
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4199,9 +4199,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'YOU TOUCHED THE FIRE
-
-    FAILURE'
+  m_Text: YOU TOUCHED THE FIRE AND FAILED :(
 --- !u!222 &916193967
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6574,7 +6572,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'YOU FAILED TO ESCAPE THE FIRE
 
-    FAILURE'
+    FAILURE :('
 --- !u!222 &1469964817
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7776,7 +7774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SphereRadius: 0
-  MoveSpeed: 5
+  MoveSpeed: 10
   useUnscaledTime: 1
   hideOnStart: 0
   debugDisplaySphere: 0
@@ -8071,7 +8069,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'YOU ESCAPED THE FIRE!
 
-    SUCCESS'
+    SUCCESS :)'
 --- !u!222 &1753317688
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8752,9 +8750,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'LOCATE THE FIRE
+  m_Text: 'LOCATE THE FIRE:
 
-    WALK AND FOLLOW YOUR TEMP GAUGE'
+    WALK AND FOLLOW YOUR TEMP GAUGE.'
 --- !u!222 &1998262573
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9128,9 +9126,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HIGH TEMPERATURES
+  m_Text: 'HIGH TEMPERATURES!
 
-    IDENTIFY THE FIRE'
+    IDENTIFY THE FIRE!'
 --- !u!222 &2063871206
 CanvasRenderer:
   m_ObjectHideFlags: 0
