@@ -32,7 +32,7 @@ public class InitiateRollover : MonoBehaviour {
 		// update the target of the user's gaze every frame
 		target = manager.GetComponent<GazeManager>().HitObject;
 		if (target != null){
-			Debug.Log(target.name);
+			//Debug.Log(target.name);
 			// if the user gazes at the fire and has not failed yet
 			if (target.name == "Cube" || target.name == "Fire Particle System"){
 				if (GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null && GameObject.FindWithTag("SuccessText") == null){
@@ -43,14 +43,19 @@ public class InitiateRollover : MonoBehaviour {
 			}
 		}
 		if (growFire){
-			GameObject.Find("FirePrefab(Clone)").transform.GetChild(0).transform.GetChild(0).transform.localScale += new Vector3(0,.01f,.01f);
+			GameObject.Find("FirePrefab(Clone)").transform.GetChild(0).transform.GetChild(0).transform.localScale += new Vector3(0.001f,.0075f,.0075f);
+		}
+		if (GameObject.FindWithTag("SuccessText")){
+			growFire = false;
 		}	
 	}
 
 	void Rollover(){
 		//Debug.Log("INITIATED ROLLOVER");
 		// evacuation time!
-		GameObject.FindWithTag("FireText").SetActive(false);
+		if (GameObject.FindWithTag("FireText")){
+			GameObject.FindWithTag("FireText").SetActive(false);
+		}
 		evacText.SetActive(true);
 		evacPath.SetActive(true);
 		growFire = true;

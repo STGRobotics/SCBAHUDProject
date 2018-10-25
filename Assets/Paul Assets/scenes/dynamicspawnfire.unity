@@ -925,7 +925,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 300
+  m_Time: 45
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 0.1
@@ -975,7 +975,7 @@ TrailRenderer:
     alignment: 0
     textureMode: 0
     generateLightingData: 0
-  m_MinVertexDistance: 5
+  m_MinVertexDistance: 1
   m_Autodestruct: 0
 --- !u!1 &139050483
 GameObject:
@@ -1409,7 +1409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &197510457
 Transform:
   m_ObjectHideFlags: 0
@@ -1906,6 +1906,16 @@ Prefab:
       propertyPath: m_Center.z
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 114942885320168082, guid: 58db606a56527334cb1d841c149064d4,
+        type: 2}
+      propertyPath: Cursor
+      value: 
+      objectReference: {fileID: 1312174956}
+    - target: {fileID: 114942885320168082, guid: 58db606a56527334cb1d841c149064d4,
+        type: 2}
+      propertyPath: DirectionIndicatorObject
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114224089394221644, guid: 58db606a56527334cb1d841c149064d4, type: 2}
     - {fileID: 114055181423302096, guid: 58db606a56527334cb1d841c149064d4, type: 2}
@@ -2396,7 +2406,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &605805205
 Transform:
   m_ObjectHideFlags: 0
@@ -4426,6 +4436,11 @@ Prefab:
       propertyPath: RaycastLayerMasks.Array.data[0].m_Bits
       value: 4294967263
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011980027866, guid: 3eddd1c29199313478dd3f912bfab2ab,
+        type: 2}
+      propertyPath: StoredStabilitySamples
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3eddd1c29199313478dd3f912bfab2ab, type: 2}
   m_IsPrefabParent: 0
@@ -5173,7 +5188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1117863394
 Transform:
   m_ObjectHideFlags: 0
@@ -5851,6 +5866,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   temp: 0
+--- !u!1 &1312174956 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000012072213228, guid: a611e772ef8ddf64d8106a9cbb70f31c,
+    type: 2}
+  m_PrefabInternal: {fileID: 491175076}
 --- !u!1 &1316305801
 GameObject:
   m_ObjectHideFlags: 0
@@ -7095,7 +7115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1544896184
 Transform:
   m_ObjectHideFlags: 0
@@ -7774,7 +7794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SphereRadius: 0
-  MoveSpeed: 10
+  MoveSpeed: 3
   useUnscaledTime: 1
   hideOnStart: 0
   debugDisplaySphere: 0
@@ -7803,10 +7823,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UseUnscaledTime: 1
-  PositionPerSecond: 30
-  RotationDegreesPerSecond: 720
+  PositionPerSecond: 240
+  RotationDegreesPerSecond: 960
   RotationSpeedScaler: 0
-  ScalePerSecond: 5
+  ScalePerSecond: 20
   SmoothLerpToTarget: 0
   SmoothPositionLerpRatio: 0.5
   SmoothRotationLerpRatio: 0.5
@@ -8905,8 +8925,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2001194304}
-  m_LocalRotation: {x: 0, y: 0.043619405, z: 0, w: 0.9990483}
-  m_LocalPosition: {x: 7.6, y: -5, z: -28.3}
+  m_LocalRotation: {x: 0, y: 0.118750535, z: 0, w: 0.99292415}
+  m_LocalPosition: {x: 2.82, y: -5, z: -20.5}
   m_LocalScale: {x: 0.025, y: 0.5, z: 0.05}
   m_Children:
   - {fileID: 1472158891}
@@ -8923,7 +8943,7 @@ Transform:
   - {fileID: 1544896184}
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 5, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 13.64, z: 0}
 --- !u!1 &2019582708
 GameObject:
   m_ObjectHideFlags: 0
@@ -9243,7 +9263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2119217778
 Transform:
   m_ObjectHideFlags: 0

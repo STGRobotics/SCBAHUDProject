@@ -39,7 +39,7 @@ public class InitiateSuccess : MonoBehaviour {
 			//Debug.Log(target);
 		}
 		// if the target is the evacuation point and the user has activated the evacuation path and the user has not yet succeeeded and the user has not yet failed
-		if (target == GameObject.Find("EvacPoint") && GameObject.FindWithTag("EvacPath") != null && GameObject.FindWithTag("SuccessText") == null && GameObject.FindWithTag("FailureText") == null){
+		if (target == GameObject.Find("EvacPoint") && GameObject.FindWithTag("EvacPath") != null && GameObject.FindWithTag("SuccessText") == null && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
 			// launch success sequence
 			Success();
 		}
@@ -48,7 +48,9 @@ public class InitiateSuccess : MonoBehaviour {
 	void Success(){
 		Debug.Log("INITIATED SUCCESS");
 		// deactivate evacuation text
-		GameObject.FindWithTag("EvacText").SetActive(false);
+		if (GameObject.FindWithTag("EvacText")){
+			GameObject.FindWithTag("EvacText").SetActive(false);
+		}
 		successText.SetActive(true);
 	}
 }
