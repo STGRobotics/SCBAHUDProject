@@ -11,6 +11,7 @@ public class InitiateRollover : MonoBehaviour {
 	private GameObject evacPath;
 	private GameObject player;
 	private bool growFire = false;
+	private float dist;
 
 	//Used, attached to camera to initiate rollover/evacuation sequence
 
@@ -25,21 +26,22 @@ public class InitiateRollover : MonoBehaviour {
 		player = gameObject;
 		evacText.SetActive(false);
 		evacPath.SetActive(false);
+		dist = 1;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		// update the target of the user's gaze every frame
 		target = manager.GetComponent<GazeManager>().HitObject;
+		dist = Vector3.Distance(player.transform.position, GameObject.Find("Cylinder").transform.position);
 		if (target != null){
 			//Debug.Log(target.name);
 			// if the user gazes at the fire and has not failed yet
-			if (target.name == "Cube" || target.name == "Fire Particle System"){
+			if (manager.GetComponent<SimpleSinglePointerSelector>().down && dist < 4){
 				if (GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null && GameObject.FindWithTag("SuccessText") == null){
 					// fire begins to rollover
 					Rollover();
 				}
-				
 			}
 		}
 		if (growFire){
@@ -53,11 +55,17 @@ public class InitiateRollover : MonoBehaviour {
 	void Rollover(){
 		//Debug.Log("INITIATED ROLLOVER");
 		// evacuation time!
+		if (GameObject.FindWithTag("InstructionsText")){
+			GameObject.FindWithTag("InstructionsText").SetActive(false);
+		}
 		if (GameObject.FindWithTag("FireText")){
 			GameObject.FindWithTag("FireText").SetActive(false);
 		}
+		GameObject.Find("Cylinder").SetActive(false);
+		GameObject.Find("Line").SetActive(false);
 		evacText.SetActive(true);
 		evacPath.SetActive(true);
 		growFire = true;
+
 	}
 }

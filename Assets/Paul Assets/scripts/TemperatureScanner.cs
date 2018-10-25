@@ -53,13 +53,13 @@ public class TemperatureScanner : MonoBehaviour {
 		temp = 300-dist*15;
 
 		// if the user is close enough to the fire and hasn't failed yet
-		if (dist < 5 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
+		if (dist < 8 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
 			// the fire appears!
 			if (!fireInstantiated){
 				Instantiate(GameObject.Find("FirePrefab"), pos3, Quaternion.identity);
 				fireInstantiated = true;
-				fireText.SetActive(true);
 				GameObject.FindWithTag("InstructionsText").SetActive(false);
+				fireText.SetActive(true);
 				GameObject.Find("FirePrefab(Clone)").transform.Rotate(0,0,90f);
 			}
 		}

@@ -34,6 +34,10 @@ namespace HoloToolkit.Unity.InputModule
         private bool addedInputManagerListener;
         private IPointingSource currentPointer;
 
+        private GameObject manager;
+        public bool down;
+        public bool up;
+
         private readonly InputSourcePointer inputSourcePointer = new InputSourcePointer();
 
         #endregion
@@ -51,6 +55,12 @@ namespace HoloToolkit.Unity.InputModule
             AddInputManagerListenerIfNeeded();
             FindCursorIfNeeded();
             ConnectBestAvailablePointer();
+
+            down = false;
+            up = false;
+
+            manager = GameObject.Find("InputManager");
+
         }
 
         private void OnEnable()
@@ -86,11 +96,28 @@ namespace HoloToolkit.Unity.InputModule
         void IInputHandler.OnInputUp(InputEventData eventData)
         {
             // Let the input fall to the next interactable object.
+            
+            if (manager.GetComponent<GazeManager>().HitObject == GameObject.Find("Cylinder")){
+                Debug.Log("up");
+                up = true;
+            }
+            else {
+                down = false;
+                up = false;
+            }
         }
 
         void IInputHandler.OnInputDown(InputEventData eventData)
         {
             HandleInputAction(eventData);
+            if (manager.GetComponent<GazeManager>().HitObject == GameObject.Find("Cylinder")){
+                Debug.Log("down");
+                down = true;
+            }
+            else {
+                up = false;
+                down = false;
+            }
         }
 
         #endregion

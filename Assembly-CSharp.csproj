@@ -51,17 +51,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BlinkText.cs" />
      <Compile Include="Assets\Holograms\good\Billboard.cs" />
      <Compile Include="Assets\Holograms\good\Interactible.cs" />
      <Compile Include="Assets\Holograms\good\InteractibleAction.cs" />
-     <Compile Include="Assets\Holograms\MicStream.cs" />
      <Compile Include="Assets\Holograms\Scripts\ChorusSettings.cs" />
      <Compile Include="Assets\Holograms\Scripts\EchoSettings.cs" />
      <Compile Include="Assets\Holograms\Scripts\GestureSoundHandler.cs" />
+     <Compile Include="Assets\Holograms\Scripts\MicStream.cs" />
      <Compile Include="Assets\Holograms\Scripts\PlaySpaceManager.cs" />
      <Compile Include="Assets\Holograms\Scripts\PolyActions.cs" />
      <Compile Include="Assets\Holograms\Scripts\PolyChargerRotation.cs" />
      <Compile Include="Assets\Holograms\Scripts\PolyStateManager.cs" />
+     <Compile Include="Assets\Holograms\Scripts\TagalongAction.cs" />
      <Compile Include="Assets\Holograms\Scripts\TapToPlaceWithSound.cs" />
      <Compile Include="Assets\Holograms\Scripts\TapToPlaceWithSoundAndAction.cs" />
      <Compile Include="Assets\Holograms\Scripts\UserVoiceEffect.cs" />
@@ -80,7 +82,6 @@
      <Compile Include="Assets\Holograms\Support\Underworld\DroneNavigationPath.cs" />
      <Compile Include="Assets\Holograms\Support\Underworld\DroneSpawner.cs" />
      <Compile Include="Assets\Holograms\Support\Underworld\UnderworldBase.cs" />
-     <Compile Include="Assets\Holograms\TagalongAction.cs" />
      <Compile Include="Assets\HoloToolkit\Boundary\Scripts\BoundaryManager.cs" />
      <Compile Include="Assets\HoloToolkit\Boundary\Scripts\SceneContentAdjuster.cs" />
      <Compile Include="Assets\HoloToolkit\Input\Scripts\Cursor\AnimatedCursor.cs" />
@@ -565,6 +566,7 @@
      <Compile Include="Assets\Paul Assets\scripts\ArrowAnchor.cs" />
      <Compile Include="Assets\Paul Assets\scripts\BreadcrumbTrail.cs" />
      <Compile Include="Assets\Paul Assets\scripts\CircleAirtankBar.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\Commands.cs" />
      <Compile Include="Assets\Paul Assets\scripts\CompassScroll.cs" />
      <Compile Include="Assets\Paul Assets\scripts\FireHider.cs" />
      <Compile Include="Assets\Paul Assets\scripts\FollowCamera.cs" />
