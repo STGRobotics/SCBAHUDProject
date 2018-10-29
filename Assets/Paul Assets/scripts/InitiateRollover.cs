@@ -33,7 +33,10 @@ public class InitiateRollover : MonoBehaviour {
 	void Update () {
 		// update the target of the user's gaze every frame
 		target = manager.GetComponent<GazeManager>().HitObject;
-		dist = Vector3.Distance(player.transform.position, GameObject.Find("Cylinder").transform.position);
+		if (GameObject.Find("Cylinder")){
+			dist = Vector3.Distance(player.transform.position, GameObject.Find("Cylinder").transform.position);
+		}
+		
 		if (target != null){
 			//Debug.Log(target.name);
 			// if the user gazes at the fire and has not failed yet
@@ -54,14 +57,16 @@ public class InitiateRollover : MonoBehaviour {
 
 	void Rollover(){
 		//Debug.Log("INITIATED ROLLOVER");
-		// evacuation time!
+		// evacuation time!w
 		if (GameObject.FindWithTag("InstructionsText")){
 			GameObject.FindWithTag("InstructionsText").SetActive(false);
 		}
 		if (GameObject.FindWithTag("FireText")){
 			GameObject.FindWithTag("FireText").SetActive(false);
 		}
-		GameObject.Find("Cylinder").SetActive(false);
+		if (GameObject.Find("Cylinder")){
+			GameObject.Find("Cylinder").SetActive(false);
+		}
 		GameObject.Find("Line").SetActive(false);
 		evacText.SetActive(true);
 		evacPath.SetActive(true);
