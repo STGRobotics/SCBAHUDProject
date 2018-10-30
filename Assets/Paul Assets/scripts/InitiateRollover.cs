@@ -12,6 +12,7 @@ public class InitiateRollover : MonoBehaviour {
 	private GameObject player;
 	private bool growFire = false;
 	private float dist;
+	private GameObject victim;
 
 	//Used, attached to camera to initiate rollover/evacuation sequence
 
@@ -24,8 +25,9 @@ public class InitiateRollover : MonoBehaviour {
 		evacText = GameObject.FindWithTag("EvacText");
 		evacPath = GameObject.FindWithTag("EvacPath");
 		player = gameObject;
-		evacText.SetActive(false);
+		victim = GameObject.Find("Cylinder");
 		evacPath.SetActive(false);
+		victim.SetActive(false);
 		dist = 1;
 	}
 	
@@ -33,14 +35,15 @@ public class InitiateRollover : MonoBehaviour {
 	void Update () {
 		// update the target of the user's gaze every frame
 		target = manager.GetComponent<GazeManager>().HitObject;
-		if (GameObject.Find("Cylinder")){
-			dist = Vector3.Distance(player.transform.position, GameObject.Find("Cylinder").transform.position);
+		dist = Vector3.Distance(player.transform.position, victim.transform.position);
+		if (dist < 4){
+			victim.SetActive(true);
 		}
 		
 		if (target != null){
 			//Debug.Log(target.name);
 			// if the user gazes at the fire and has not failed yet
-			if (manager.GetComponent<SimpleSinglePointerSelector>().down && dist < 4){
+			if (manager.GetComponent<SimpleSinglePointerSelector>().down){
 				if (GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null && GameObject.FindWithTag("SuccessText") == null){
 					// fire begins to rollover
 					Rollover();
@@ -67,7 +70,9 @@ public class InitiateRollover : MonoBehaviour {
 		if (GameObject.Find("Cylinder")){
 			GameObject.Find("Cylinder").SetActive(false);
 		}
-		GameObject.Find("Line").SetActive(false);
+		if (GameObject.Find("Line")){
+			GameObject.Find("Line").SetActive(false);
+		}
 		evacText.SetActive(true);
 		evacPath.SetActive(true);
 		growFire = true;

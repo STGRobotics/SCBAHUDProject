@@ -98,7 +98,7 @@ namespace HoloToolkit.Unity.InputModule
             // Let the input fall to the next interactable object.
             
             if (manager.GetComponent<GazeManager>().HitObject == GameObject.Find("Cylinder")){
-                Debug.Log("up");
+                //Debug.Log("up");
                 up = true;
             }
             else {
@@ -111,7 +111,7 @@ namespace HoloToolkit.Unity.InputModule
         {
             HandleInputAction(eventData);
             if (manager.GetComponent<GazeManager>().HitObject == GameObject.Find("Cylinder")){
-                Debug.Log("down");
+                //Debug.Log("down");
                 down = true;
             }
             else {

@@ -414,3 +414,4 @@ b9c2a03aab90409398388f3f796e0865 Assembly-CSharp.dll:.CompassScroll
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LineBaseEditor
 aa573da5178a98cdf7ef39d22614bb9b Assembly-CSharp.dll:HoloToolkit.Unity.Buttons.CompoundButton
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:Academy.ShrinkAway
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Manager

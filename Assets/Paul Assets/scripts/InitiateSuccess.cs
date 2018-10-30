@@ -46,7 +46,7 @@ public class InitiateSuccess : MonoBehaviour {
 	}
 
 	void Success(){
-		Debug.Log("INITIATED SUCCESS");
+		//Debug.Log("INITIATED SUCCESS");
 		// deactivate evacuation text
 		if (GameObject.FindWithTag("EvacText")){
 			GameObject.FindWithTag("EvacText").SetActive(false);
