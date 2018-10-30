@@ -13,6 +13,7 @@ public class InitiateRollover : MonoBehaviour {
 	private bool growFire = false;
 	private float dist;
 	private GameObject victim;
+	private bool rescued;
 
 	//Used, attached to camera to initiate rollover/evacuation sequence
 
@@ -29,6 +30,7 @@ public class InitiateRollover : MonoBehaviour {
 		evacPath.SetActive(false);
 		victim.SetActive(false);
 		dist = 1;
+		rescued = false;
 	}
 	
 	// Update is called once per frame
@@ -36,7 +38,7 @@ public class InitiateRollover : MonoBehaviour {
 		// update the target of the user's gaze every frame
 		target = manager.GetComponent<GazeManager>().HitObject;
 		dist = Vector3.Distance(player.transform.position, victim.transform.position);
-		if (dist < 4){
+		if (dist < 4 && !rescued){
 			victim.SetActive(true);
 		}
 		
@@ -69,6 +71,7 @@ public class InitiateRollover : MonoBehaviour {
 		}
 		if (GameObject.Find("Cylinder")){
 			GameObject.Find("Cylinder").SetActive(false);
+			rescued = true;
 		}
 		if (GameObject.Find("Line")){
 			GameObject.Find("Line").SetActive(false);
