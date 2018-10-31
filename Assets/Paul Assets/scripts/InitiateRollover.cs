@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using HoloToolkit.Unity.InputModule;
 
@@ -10,10 +9,14 @@ public class InitiateRollover : MonoBehaviour {
 	private GameObject evacText;
 	private GameObject evacPath;
 	private GameObject player;
-	private bool growFire = false;
+	public bool growFire = false;
 	private float dist;
 	private GameObject victim;
 	private bool rescued;
+	private float er;
+	private ParticleSystem.EmissionModule em;
+
+	
 
 	//Used, attached to camera to initiate rollover/evacuation sequence
 
@@ -38,22 +41,19 @@ public class InitiateRollover : MonoBehaviour {
 		// update the target of the user's gaze every frame
 		target = manager.GetComponent<GazeManager>().HitObject;
 		dist = Vector3.Distance(player.transform.position, victim.transform.position);
-		if (dist < 4 && !rescued){
+		if (dist < 8 && !rescued){
 			victim.SetActive(true);
 		}
 		
 		if (target != null){
 			//Debug.Log(target.name);
 			// if the user gazes at the fire and has not failed yet
-			if (manager.GetComponent<SimpleSinglePointerSelector>().down){
+			if (manager.GetComponent<SimpleSinglePointerSelector>().down && dist < 2){
 				if (GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null && GameObject.FindWithTag("SuccessText") == null){
 					// fire begins to rollover
 					Rollover();
 				}
 			}
-		}
-		if (growFire){
-			GameObject.Find("FirePrefab(Clone)").transform.GetChild(0).transform.GetChild(0).transform.localScale += new Vector3(0.001f,.0075f,.0075f);
 		}
 		if (GameObject.FindWithTag("SuccessText")){
 			growFire = false;

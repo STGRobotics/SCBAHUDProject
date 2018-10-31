@@ -25,7 +25,7 @@ public class KillPlayer : MonoBehaviour {
 
 	void OnCollisionEnter (Collision col)
     {
-    	//Debug.Log(col.gameObject.name);
+    	Debug.Log(col.gameObject.name);
     	// if fire collides with camera/player, failure sequence
         if(col.gameObject.name == "Fire Particle System" && GameObject.FindWithTag("SuccessText") == null && GameObject.FindWithTag("FailureText") == null)
         {
