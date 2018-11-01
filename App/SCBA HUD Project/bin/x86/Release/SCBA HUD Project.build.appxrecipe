@@ -442,6 +442,9 @@
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\Data\globalgamemanagers.assets.resS">
+      <PackagePath>Data\globalgamemanagers.assets.resS</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
