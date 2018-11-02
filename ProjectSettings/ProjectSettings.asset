@@ -39,8 +39,7 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos: []
-  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: f0784dc63453fb243bc695c86bb571f5,
-    type: 3}
+  m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -569,7 +568,7 @@ PlayerSettings:
     Metro: 3
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: SCBAHUDProject
+  metroPackageName: SCBA
   metroPackageVersion: 1.0.0.0
   metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
@@ -578,10 +577,10 @@ PlayerSettings:
   metroCertificateNotAfter: 001f9c54a0a7d301
   metroApplicationDescription: SCBA HUD Project
   wsaImages:
-    65936: Assets/Paul Assets/images/logos/UX_Logo_200x200.png
-    852224: Assets/Paul Assets/images/logos/UX_Logo_256x256.png
-    2031872: Assets/Paul Assets/images/logos/UX_Logo_256x256.png
-    2228424: Assets/Paul Assets/images/logos/UX_Logo_620x620.png
+    65936: 
+    852224: 
+    2031872: 
+    2228424: 
   metroTileShortName: SCBA
   metroCommandLineArgsFile: 
   metroTileShowName: 0

@@ -21,6 +21,7 @@ public class TemperatureScanner : MonoBehaviour {
 	// variable for image fill attribute of temperature gauge component
 	Image fillImg;
 	private bool fireInstantiated = false;
+	private float dist2;
 
 	// Use this for initialization
 	void Start () {
@@ -37,6 +38,7 @@ public class TemperatureScanner : MonoBehaviour {
 		pos2 = new Vector3(4.0f, 0.1f, 12.0f);
 		pos3 = new Vector3(0.81f, -3.05f, 21.25f);
 		dist = 1;
+		dist2 = 1;
 		fillImg = this.GetComponent<Image>();
 	}
 	
@@ -46,11 +48,12 @@ public class TemperatureScanner : MonoBehaviour {
 		pos1 = player.transform.position;
 		// update distance between player/camera and fire every frame
 		dist = Vector3.Distance(pos1, pos2);
-		//Debug.Log(dist + " meters");
-		//Debug.Log(temp + " degrees");
+		Debug.Log(dist2 + " meters");
+		Debug.Log(temp + " degrees");
 
+		dist2 = Vector3.Distance(pos1, pos3);
 		// temperature is some number - distance so that it gets hotter as the user gets closer
-		temp = 300-dist*15;
+		temp = 500 - dist2*dist2;
 
 		// if the user is close enough to the fire and hasn't failed yet
 		if (dist < 8 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
@@ -64,10 +67,10 @@ public class TemperatureScanner : MonoBehaviour {
 			}
 		}
 		// as long as the temperature does not reach 300 (distance is 0, or you're in the fire)
-		if (temp < 300)
+		if (temp < 500)
 		{
 			// temperature gauge fill amount update
-			fillImg.fillAmount = temp / 300; 
+			fillImg.fillAmount = temp / 500; 
 		}
 	}
 }

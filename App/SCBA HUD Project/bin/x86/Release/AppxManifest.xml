@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="SCBAHUDProject" Publisher="CN=DefaultCompany" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <Identity Name="SCBA" Publisher="CN=DefaultCompany" Version="1.0.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="1627749c-caa8-4777-b8e5-db9a79784f50" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>SCBA HUD Project</DisplayName>
@@ -22,12 +22,11 @@
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="SCBA HUD Project.exe" EntryPoint="SCBAHUDProject.App">
+    <Application Id="App" Executable="SCBA HUD Project.exe" EntryPoint="SCBA.App">
       <uap:VisualElements DisplayName="SCBA HUD Project" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="SCBA HUD Project" BackgroundColor="transparent">
-        <uap:DefaultTile ShortName="SCBA" Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png">
+        <uap:DefaultTile ShortName="SCBA" Wide310x150Logo="Assets\Wide310x150Logo.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
-            <uap:ShowOn Tile="square310x310Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />
           </uap:ShowNameOnTiles>
         </uap:DefaultTile>
