@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 //Used, attached to Temperature to increment fill amount of child image based on distance
 
@@ -22,6 +23,7 @@ public class TemperatureScanner : MonoBehaviour {
 	Image fillImg;
 	private bool fireInstantiated = false;
 	private float dist2;
+	private TextMeshProUGUI text;
 
 	// Use this for initialization
 	void Start () {
@@ -40,6 +42,7 @@ public class TemperatureScanner : MonoBehaviour {
 		dist = 1;
 		dist2 = 1;
 		fillImg = this.GetComponent<Image>();
+		text = gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 	}
 	
 	// Update is called once per frame
@@ -48,10 +51,21 @@ public class TemperatureScanner : MonoBehaviour {
 		pos1 = player.transform.position;
 		// update distance between player/camera and fire every frame
 		dist = Vector3.Distance(pos1, pos2);
-		Debug.Log(dist2 + " meters");
-		Debug.Log(temp + " degrees");
+		//Debug.Log(dist2 + " meters");
+		//Debug.Log(temp + " degrees");
+		
+		if (!fireInstantiated)
+		{
+			dist2 = Vector3.Distance(pos1, pos3);
+			
+		}
+		else 
+		{
+			Vector3 bxSize = GameObject.Find("FirePrefab(Clone)").transform.GetChild(0).transform.GetChild(0).GetComponent<BoxCollider>().size;
+			//Debug.Log(bxSize);
+			dist2 = Vector3.Distance(pos1, new Vector3(pos3.x, pos3.y, pos3.z - bxSize.z/2));
+		}
 
-		dist2 = Vector3.Distance(pos1, pos3);
 		// temperature is some number - distance so that it gets hotter as the user gets closer
 		temp = 500 - dist2*dist2;
 
@@ -67,10 +81,12 @@ public class TemperatureScanner : MonoBehaviour {
 			}
 		}
 		// as long as the temperature does not reach 300 (distance is 0, or you're in the fire)
-		if (temp < 500)
+		if (temp < 500 && temp > 100)
 		{
 			// temperature gauge fill amount update
 			fillImg.fillAmount = temp / 500; 
+			text.SetText("Temperature\n" + Mathf.RoundToInt(temp)*2 + "°F");
+			
 		}
 	}
 }

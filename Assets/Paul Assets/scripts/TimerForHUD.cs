@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 //Used, attached to AirTank to manage fill amount of child image based on timer
 
@@ -15,6 +16,7 @@ public class TimerForHUD : MonoBehaviour {
 	float time;
 	// text alert for failure
 	private GameObject failureText;
+	private TextMeshProUGUI text;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +25,7 @@ public class TimerForHUD : MonoBehaviour {
 		// we assign it to a variable before setting it to inactive so we can activate it upon failure
 		failureText = GameObject.FindWithTag("FailureText");
 		failureText.SetActive(false);
+		text = gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 	}
 	
 	// Update is called once per frame
@@ -35,6 +38,7 @@ public class TimerForHUD : MonoBehaviour {
 				// drain image based on elapsed time
 				time -= Time.deltaTime;
 				fillImg.fillAmount = time / timeAmt; 
+				text.SetText("Air Tank\n" + Mathf.RoundToInt(time/timeAmt * 100) + "%");
 			}
 			// if time runs out
 			else {

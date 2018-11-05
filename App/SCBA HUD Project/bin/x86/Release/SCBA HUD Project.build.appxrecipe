@@ -25,8 +25,8 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\bin\x86\Release\SCBA HUD Project.exe">
-      <PackagePath>entrypoint\SCBA HUD Project.exe</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\bin\x86\Release\SCBA.exe">
+      <PackagePath>entrypoint\SCBA.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -400,8 +400,12 @@
       <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\Assets\Wide310x150Logo.scale-200.png">
@@ -550,6 +554,9 @@
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.AnimationModule.dll">
+      <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
     </AppxPackagedFile>
@@ -565,20 +572,14 @@
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.CrashReportingModule.dll">
-      <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.AnimationModule.dll">
-      <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.DirectorModule.dll">
-      <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.CrashReportingModule.dll">
+      <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
@@ -597,6 +598,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.DirectorModule.dll">
+      <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
@@ -628,6 +632,9 @@
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.SpatialTracking.dll">
       <PackagePath>UnityEngine.SpatialTracking.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\TextMeshPro-2017.3-Runtime.dll">
+      <PackagePath>TextMeshPro-2017.3-Runtime.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
     </AppxPackagedFile>
@@ -646,8 +653,8 @@
     <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\Assembly-CSharp-firstpass.dll">
       <PackagePath>Assembly-CSharp-firstpass.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\bin\x86\Release\Core\SCBA HUD Project.exe">
-      <PackagePath>SCBA HUD Project.exe</PackagePath>
+    <AppxPackagedFile Include="C:\Users\pmerritt\Documents\SCBAHUDProject\App\SCBA HUD Project\bin\x86\Release\Core\SCBA.exe">
+      <PackagePath>SCBA.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

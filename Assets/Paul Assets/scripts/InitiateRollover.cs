@@ -34,6 +34,7 @@ public class InitiateRollover : MonoBehaviour {
 		victim.SetActive(false);
 		dist = 1;
 		rescued = false;
+		
 	}
 	
 	// Update is called once per frame

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 //Used, attached to SpatialMapping to print status of activation
 
@@ -20,14 +21,14 @@ public class PrintStatusOfMapping : MonoBehaviour {
 	}
 
 	void OnDisable() {
-		debugText.GetComponent<Text>().text = "Map Removed";
+		debugText.GetComponent<TextMeshProUGUI>().SetText("Map Removed");
 		Invoke("ClearText", 3);
 		//ClearTextAfterTime(3f);
 	}
 
 	void OnEnable() {
 		debugText = GameObject.FindWithTag("DebugText");
-		debugText.GetComponent<Text>().text = "Mapping Space";
+		debugText.GetComponent<TextMeshProUGUI>().SetText("Mapping Space");
 		Invoke("ClearText", 3);
 		//ClearTextAfterTime(3f);
 	}
@@ -36,10 +37,10 @@ public class PrintStatusOfMapping : MonoBehaviour {
  	{
 	    yield return new WaitForSeconds(time);
 	 	
-	    debugText.GetComponent<Text>().text = "";
+	    debugText.GetComponent<TextMeshProUGUI>().SetText("");
  	}
 
  	void ClearText() {
- 		debugText.GetComponent<Text>().text = "";
+ 		debugText.GetComponent<TextMeshProUGUI>().SetText("");
  	}
 }
