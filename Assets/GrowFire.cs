@@ -18,7 +18,7 @@ public class GrowFire : MonoBehaviour {
 		er = 10.0f;
 		camera = GameObject.Find("MixedRealityCamera");
 		ir = camera.GetComponent<InitiateRollover>();
-		gameObject.transform.Rotate(-90.0f, 0.0f, 0.0f);
+		gameObject.transform.Rotate(0.0f, 0.0f, 90.0f);
 		bc = gameObject.GetComponent<BoxCollider>();
 	}
 	
