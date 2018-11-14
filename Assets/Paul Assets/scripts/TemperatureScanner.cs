@@ -38,7 +38,7 @@ public class TemperatureScanner : MonoBehaviour {
 		pos1 = player.transform.position;
 		// get fire position (static)
 		pos2 = new Vector3(4.0f, 0.1f, 12.0f);
-		pos3 = new Vector3(0.81f, -3.05f, 21.25f);
+		pos3 = new Vector3(22.93f, -3.05f, 11.5f);
 		dist = 1;
 		dist2 = 1;
 		fillImg = this.GetComponent<Image>();
@@ -69,10 +69,10 @@ public class TemperatureScanner : MonoBehaviour {
 			}
 
 			// temperature is some number - distance so that it gets hotter as the user gets closer
-			temp = 500 - dist2*dist2;
+			temp = 800 - dist2*dist2;
 
 			// if the user is close enough to the fire and hasn't failed yet
-			if (dist < 8 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
+			if (dist2 < 20 && GameObject.FindWithTag("FailureText") == null && GameObject.FindWithTag("FailureText2") == null){
 				// the fire appears!
 				if (!fireInstantiated){
 					Instantiate(GameObject.Find("FirePrefab"), pos3, Quaternion.identity);
@@ -82,11 +82,11 @@ public class TemperatureScanner : MonoBehaviour {
 				}
 			}
 			// as long as the temperature does not reach 300 (distance is 0, or you're in the fire)
-			if (temp < 500 && temp > 100)
+			if (temp < 1000 && temp > 100)
 			{
 				// temperature gauge fill amount update
-				fillImg.fillAmount = temp / 500; 
-				text.SetText("Temperature\n" + Mathf.RoundToInt(temp)*2 + "°F");
+				fillImg.fillAmount = temp / 1000; 
+				text.SetText("Temperature\n" + Mathf.RoundToInt(temp) + "°F");
 				
 			}
 		}

@@ -25,14 +25,14 @@ public class GrowFire : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (ir.growFire){
-			if (sizexNum <= 20.0f){
-				bc.size = new Vector3(bc.size.x+.0012f, bc.size.y, bc.size.z);
-				sizexNum+=.04f;
+			if (sizezNum <= 2.0f){
+				bc.size = new Vector3(bc.size.x, bc.size.y, bc.size.z+0.00025f);
+				sizezNum+=.01f;
 			}
 			else {
-				bc.size = new Vector3(bc.size.x, bc.size.y, bc.size.z+0.00025f);
+				bc.size = new Vector3(bc.size.x+.00024f, bc.size.y, bc.size.z);
 			}
-			sizezNum+=.01f;
+			sizexNum+=.008f;
 			er+=.1f;
 		}
 		var sh = gameObject.GetComponent<ParticleSystem>().shape;

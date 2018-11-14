@@ -45,7 +45,7 @@ public class InitiateRollover : MonoBehaviour {
 		{
 			dist = Vector3.Distance(player.transform.position, victim.transform.position);
 		}
-		if (dist < 8 && !rescued){
+		if (dist < 11 && !rescued){
 			victim.SetActive(true);
 		}
 		
