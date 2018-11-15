@@ -52,5 +52,8 @@ public class InitiateSuccess : MonoBehaviour {
 			GameObject.FindWithTag("EvacText").SetActive(false);
 		}
 		successText.SetActive(true);
+		if (GameObject.Find("FirePrefab(Clone)")){
+			GameObject.Find("FirePrefab(Clone)").SetActive(false);
+		}
 	}
 }

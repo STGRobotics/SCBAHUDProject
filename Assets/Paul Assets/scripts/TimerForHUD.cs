@@ -54,6 +54,9 @@ public class TimerForHUD : MonoBehaviour {
 				if (GameObject.FindWithTag("InstructionsText")){
 					GameObject.FindWithTag("InstructionsText").SetActive(false);
 				}
+				if (GameObject.Find("FirePrefab(Clone)")){
+					GameObject.Find("FirePrefab(Clone)").SetActive(false);
+				}
 				
 			}
 		}
