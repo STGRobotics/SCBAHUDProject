@@ -571,6 +571,7 @@
      <Compile Include="Assets\HoloToolkit\UX\Scripts\UsabilityScaler.cs" />
      <Compile Include="Assets\HoloToolkit\UX\Scripts\UsabilityUtilities.cs" />
      <Compile Include="Assets\Manager.cs" />
+     <Compile Include="Assets\OutOfBoundsDetector.cs" />
      <Compile Include="Assets\Paul Assets\scripts\AnchorManager.cs" />
      <Compile Include="Assets\Paul Assets\scripts\ArrowAnchor.cs" />
      <Compile Include="Assets\Paul Assets\scripts\BreadcrumbTrail.cs" />
