@@ -38,7 +38,7 @@ public class TemperatureScanner : MonoBehaviour {
 		pos1 = player.transform.position;
 		// get fire position (static)
 		pos2 = new Vector3(4.0f, 0.1f, 12.0f);
-		pos3 = new Vector3(22.93f, -3.05f, 11.5f);
+		pos3 = new Vector3(22.93f, -3.05f, 12.5f);
 		dist = 1;
 		dist2 = 1;
 		fillImg = this.GetComponent<Image>();
@@ -66,6 +66,9 @@ public class TemperatureScanner : MonoBehaviour {
 				Vector3 bxSize = GameObject.Find("FirePrefab(Clone)").transform.GetChild(0).transform.GetChild(0).GetComponent<BoxCollider>().size;
 				//Debug.Log(bxSize);
 				dist2 = Vector3.Distance(pos1, new Vector3(pos3.x, pos3.y, pos3.z - bxSize.z/2));
+			}
+			if (player.GetComponent<InitiateRollover>().growFire){
+				pos3 = new Vector3(pos3.x - .01f, pos3.y, pos3.z);
 			}
 
 			// temperature is some number - distance so that it gets hotter as the user gets closer
