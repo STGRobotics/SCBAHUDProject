@@ -51,7 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BlinkText.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
@@ -59,7 +58,6 @@
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
-     <Compile Include="Assets\GrowFire.cs" />
      <Compile Include="Assets\Holograms\good\Billboard.cs" />
      <Compile Include="Assets\Holograms\good\Interactible.cs" />
      <Compile Include="Assets\Holograms\good\InteractibleAction.cs" />
@@ -570,24 +568,30 @@
      <Compile Include="Assets\HoloToolkit\UX\Scripts\UICollection.cs" />
      <Compile Include="Assets\HoloToolkit\UX\Scripts\UsabilityScaler.cs" />
      <Compile Include="Assets\HoloToolkit\UX\Scripts\UsabilityUtilities.cs" />
-     <Compile Include="Assets\Manager.cs" />
-     <Compile Include="Assets\OutOfBoundsDetector.cs" />
      <Compile Include="Assets\Paul Assets\scripts\AnchorManager.cs" />
      <Compile Include="Assets\Paul Assets\scripts\ArrowAnchor.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\BlinkText.cs" />
      <Compile Include="Assets\Paul Assets\scripts\BreadcrumbTrail.cs" />
      <Compile Include="Assets\Paul Assets\scripts\CircleAirtankBar.cs" />
      <Compile Include="Assets\Paul Assets\scripts\Commands.cs" />
      <Compile Include="Assets\Paul Assets\scripts\CompassScroll.cs" />
      <Compile Include="Assets\Paul Assets\scripts\FireHider.cs" />
      <Compile Include="Assets\Paul Assets\scripts\FollowCamera.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\GrowFire.cs" />
      <Compile Include="Assets\Paul Assets\scripts\InitiateRollover.cs" />
      <Compile Include="Assets\Paul Assets\scripts\InitiateSuccess.cs" />
      <Compile Include="Assets\Paul Assets\scripts\KillPlayer.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\Manager.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\OutOfBoundsDetector.cs" />
      <Compile Include="Assets\Paul Assets\scripts\PrintStatusOfMapping.cs" />
      <Compile Include="Assets\Paul Assets\scripts\PrintToDebugText.cs" />
      <Compile Include="Assets\Paul Assets\scripts\Restart.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\ShrunkGrowFire.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\ShrunkInitiateRollover.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\ShrunkTemperatureScanner.cs" />
      <Compile Include="Assets\Paul Assets\scripts\TapToPlaceParent.cs" />
      <Compile Include="Assets\Paul Assets\scripts\TemperatureScanner.cs" />
+     <Compile Include="Assets\Paul Assets\scripts\TextOutline.cs" />
      <Compile Include="Assets\Paul Assets\scripts\TimerForHUD.cs" />
      <Compile Include="Assets\Paul Assets\scripts\ToggleSpatialMapping.cs" />
      <Compile Include="Assets\Paul Assets\scripts\WorldSpacePositionSimulator.cs" />
@@ -677,7 +681,6 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-     <Compile Include="Assets\TextOutline.cs" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />

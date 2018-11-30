@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Paul Assets/scenes/dynamicspawnfire.unity
+- path: Assets/Paul Assets/scenes/shrunk2ces.unity
   isLoaded: 1
   isActive: 1

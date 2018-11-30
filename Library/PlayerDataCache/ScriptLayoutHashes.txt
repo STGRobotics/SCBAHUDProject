@@ -1,8 +1,8 @@
 Metro
 PlayerPath?
-C:/Users/pmerritt/Documents/SCBAHUDProject/App
+C:/Users/pmerritt/Documents/SCBAHUDProject/Shrunk2CES
 SceneListBegin?
-Assets/Paul Assets/scenes/dynamicspawnfire.unity
+Assets/Paul Assets/scenes/shrunk2ces.unity
 SceneListEnd?
 7abde016883951c4ca4e7c44ce6adb2c Assembly-CSharp.dll:HoloToolkit.Unity.SceneLauncher
 2fb39702360b86b0d9d52bce766883c8 Assembly-CSharp.dll:GLTF.GLTFComponent
@@ -649,3 +649,6 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
+ef9df8bb3fe30e6741f63609e42095c5 Assembly-CSharp.dll:.ShrunkTemperatureScanner
+37084366f5d5df07d9d6b7d2d0375986 Assembly-CSharp.dll:.ShrunkInitiateRollover
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShrunkGrowFire

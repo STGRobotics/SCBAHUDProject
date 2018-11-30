@@ -7549,6 +7549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   temp: 0
+  pos3: {x: 22.93, y: -3.05, z: 12.5}
 --- !u!1 &1312174956 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012072213228, guid: a611e772ef8ddf64d8106a9cbb70f31c,
