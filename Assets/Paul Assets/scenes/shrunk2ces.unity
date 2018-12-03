@@ -3372,7 +3372,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &605805205
 Transform:
   m_ObjectHideFlags: 0
@@ -4815,7 +4815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e06b530b0dba40428d7eca3173ba3f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeAmt: 180
+  timeAmt: 90
 --- !u!114 &790411641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5675,8 +5675,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 922371331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -15.1}
-  m_LocalScale: {x: 25, y: 25, z: 25}
+  m_LocalPosition: {x: 0, y: 0, z: -12.5}
+  m_LocalScale: {x: 10, y: 10, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -6642,7 +6642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1117863394
 Transform:
   m_ObjectHideFlags: 0
@@ -7550,6 +7550,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   temp: 0
   pos3: {x: 10.332558, y: -3.05, z: 2.9069767}
+  fireInstantiated: 0
+  dist2: 0
 --- !u!1 &1312174956 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012072213228, guid: a611e772ef8ddf64d8106a9cbb70f31c,
@@ -7864,7 +7866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1340105486
 Transform:
   m_ObjectHideFlags: 0
@@ -10735,7 +10737,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1789498317
 Transform:
   m_ObjectHideFlags: 0
@@ -11925,8 +11927,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2001194304}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -14.05, y: -1.8, z: -4.5}
-  m_LocalScale: {x: 0.025, y: 0.15, z: 0.05}
+  m_LocalPosition: {x: -3.515, y: -1.8, z: 1.09}
+  m_LocalScale: {x: 0.00625, y: 0.0375, z: 0.0125}
   m_Children:
   - {fileID: 1472158891}
   - {fileID: 1907263137}

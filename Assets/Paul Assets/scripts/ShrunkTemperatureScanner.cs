@@ -21,8 +21,8 @@ public class ShrunkTemperatureScanner : MonoBehaviour {
 	private GameObject fireText;
 	// variable for image fill attribute of temperature gauge component
 	Image fillImg;
-	private bool fireInstantiated = false;
-	private float dist2;
+	public bool fireInstantiated;
+	public float dist2;
 	private TextMeshProUGUI text;
 
 	// Use this for initialization
@@ -41,6 +41,7 @@ public class ShrunkTemperatureScanner : MonoBehaviour {
 		//pos3 = new Vector3(22.93f, -3.05f, 12.5f);
 		dist = 1;
 		dist2 = 1;
+		fireInstantiated = false;
 		fillImg = this.GetComponent<Image>();
 		text = gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 	}
@@ -54,6 +55,7 @@ public class ShrunkTemperatureScanner : MonoBehaviour {
 			// update distance between player/camera and fire every frame
 			dist = Vector3.Distance(pos1, pos2);
 			//Debug.Log(dist2 + " meters");
+			//Debug.Log(fireInstantiated);
 			//Debug.Log(temp + " degrees");
 			
 			if (!fireInstantiated)
@@ -67,7 +69,7 @@ public class ShrunkTemperatureScanner : MonoBehaviour {
 				//Debug.Log(bxSize);
 				dist2 = Vector3.Distance(pos1, new Vector3(pos3.x, pos3.y, pos3.z - bxSize.z/2));
 			}
-			if (player.GetComponent<InitiateRollover>().growFire){
+			if (player.GetComponent<ShrunkInitiateRollover>().growFire){
 				pos3 = new Vector3(pos3.x - .01f, pos3.y, pos3.z);
 			}
 

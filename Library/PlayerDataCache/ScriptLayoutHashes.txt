@@ -186,6 +186,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 40d41f498420a9b3985f6fc7e5763447 Assembly-CSharp-firstpass.dll:UnityStandardAssets.ImageEffects.Bloom
 98084531bd8a843e71c0cc23d5715994 Assembly-CSharp.dll:HoloToolkit.Unity.UAudioManager
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShrunkGrowFire
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ArrowAnchor
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.WorldSpacePositionSimulator
 bb71daf4be15574fae476dd54cffc6f0 Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.MixedRealityTeleport
@@ -486,6 +487,7 @@ aa9d1bd0cc771545f2ae1f63a6d0ed6a Assembly-CSharp.dll:TMPro.Examples.TMP_TextEven
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
+cc92122b8c3b736e2f4356e11d25fae8 Assembly-CSharp.dll:.ShrunkTemperatureScanner
 00899b89e3f5c32399bd6d7e15cb69bc Assembly-CSharp.dll:HoloToolkit.Unity.InputModule.AnimatedCursor
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.OutOfBoundsDetector
 00566559aaf2ba51543e32371603951b Assembly-CSharp-firstpass.dll:UnityStandardAssets.ImageEffects.NoiseAndGrain
@@ -564,6 +566,7 @@ f1dddc522eb4451a473352e2116e6cff Assembly-CSharp.dll:HoloToolkit.Unity.InputModu
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.TextMeshSpawner
 c200d5e5157786d95373f6cec9caf166 Assembly-CSharp.dll:HoloToolkit.Unity.SpatialMapping.SurfacePlane
 c8976d7967718aef16e0ffc6a8ce611b Assembly-CSharp.dll:.BlinkText
+37084366f5d5df07d9d6b7d2d0375986 Assembly-CSharp.dll:.ShrunkInitiateRollover
 34b017a68ec5b414d9e16d807c0cd7ab Assembly-CSharp.dll:HoloToolkit.Unity.UX.LineMeshes
 e2a8fd4524fc2a3a236b7e7720b544a6 Assembly-CSharp-firstpass.dll:UnityStandardAssets.ImageEffects.EdgeDetection
 af7666733efcc974926d7d470e1732a6 Assembly-CSharp.dll:TMPro.Examples.SkewTextExample
@@ -649,6 +652,3 @@ d2a2bd333db22f480a8589e167314ecc Vuforia.UnityExtensions.dll:Vuforia.UserDefined
 15bea26698002c6c4a3087131232ce5c Vuforia.UnityExtensions.dll:Vuforia.WordBehaviour
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-ef9df8bb3fe30e6741f63609e42095c5 Assembly-CSharp.dll:.ShrunkTemperatureScanner
-37084366f5d5df07d9d6b7d2d0375986 Assembly-CSharp.dll:.ShrunkInitiateRollover
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShrunkGrowFire

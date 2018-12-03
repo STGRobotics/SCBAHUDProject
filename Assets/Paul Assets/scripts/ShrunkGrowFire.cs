@@ -8,7 +8,7 @@ public class ShrunkGrowFire : MonoBehaviour {
 	private float sizezNum;
 	private float er;
 	private GameObject camera;
-	private InitiateRollover ir;
+	private ShrunkInitiateRollover ir;
 	private BoxCollider bc;
 
 	// Use this for initialization
@@ -17,7 +17,7 @@ public class ShrunkGrowFire : MonoBehaviour {
 		sizezNum = 1.0f;
 		er = 10.0f;
 		camera = GameObject.Find("MixedRealityCamera");
-		ir = camera.GetComponent<InitiateRollover>();
+		ir = camera.GetComponent<ShrunkInitiateRollover>();
 		gameObject.transform.Rotate(0.0f, 0.0f, 90.0f);
 		bc = gameObject.GetComponent<BoxCollider>();
 	}
