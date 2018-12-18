@@ -370,7 +370,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 9cd7ffff62d8ffff2addfffffaedffffc0eeffff88f3ffff98fbffff00000000
+    m_ExpandedIDs: 98fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -452,13 +452,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.50972885, y: -0.48093653, z: 0.4316008, w: -0.56797653}
+    m_Target: {x: -0.43000442, y: -0.28175756, z: 0.14325501, w: -0.8456869}
     speed: 2
-    m_Value: {x: 0.50972885, y: 0.48093653, z: -0.43160084, w: 0.5679766}
+    m_Value: {x: -0.43000454, y: -0.28175765, z: 0.14325505, w: -0.84568715}
   m_Size:
-    m_Target: 6.9550424
+    m_Target: 6.9841466
     speed: 2
-    m_Value: 6.9550424
+    m_Value: 6.9841466
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -509,18 +509,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Paul Assets/sounds
+    - Assets/Paul Assets/scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Paul Assets/sounds
+  - Assets/Paul Assets/scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\pmerritt\Documents\SCBAHUDProject
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1379}
-    m_SelectedIDs: cc330000
-    m_LastClickedID: 13260
+    scrollPos: {x: 0, y: 1363}
+    m_SelectedIDs: 0a410000
+    m_LastClickedID: 16650
     m_ExpandedIDs: 00000000283300004233000068340000e83400003c360000a4360000c0360000f836000016370000083800000a3b0000c63b0000403c00005a3c0000fe3c00005a3d0000643d0000b43d0000be3d00002a3e0000763e0000e63e0000583f000084400000a04000005641000034420000a64200003a4300009e4300005a440000784400002c5100002e51000030510000325100003451000036510000385100003a5100003c5100003e51000040510000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -580,18 +580,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: c6230000c43c000046370000442f000000000000d03b00007c4a000078850000e4aa0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: FollowCamera
+      m_OriginalName: FollowCamera
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 2670
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
